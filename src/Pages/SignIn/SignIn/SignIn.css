@@ -1,22 +1,31 @@
 .sign-in {
-    background-color: #ebf5fc;
+    /* background-color: #edecf1; */
     padding: 50px;
+    display: flex;
+    justify-content: start;
+}
+
+.image-container {
+    width: 700px;
+}
+
+.sign-in img {
+    width: 100%;
 }
 
 .form-container {
-    width: 500px;
-    height: 530px;
-    margin: 50px auto;
+    width: 380px;
+    height: 540px;
     box-sizing: border-box;
     border-radius: 8px;
     display: flex;
     justify-content: center;
-    background-color: white;
+    background-color: #220768;
 }
 
 .form-title {
     font-size: 35px;
-    color: rgb(35, 166, 240);
+    color: white;
     text-align: center;
 }
 
@@ -25,13 +34,14 @@
 }
 
 .input-group input {
-    width: 415px;
+    width: 300px;
     height: 40px;
     padding: 0 10px;
     border: 1px solid #95A0A7;
     box-sizing: border-box;
     border-radius: 5px;
     font-size: 18px;
+    margin: 0 auto;
 }
 
 .error-message {
@@ -40,30 +50,29 @@
     font-weight: bold;
 }
 
-/* .success-message {
-    color: green;
-    text-align: left;
-    font-weight: bold;
-} */
-
 .form-submit {
-    width: 415px;
+    width: 300px;
     height: 40px;
-    background-color: #96caf5;
+    margin: auto 40px !important;
+    background-color: yellowgreen;
+    color: #220768;
     border: none;
     border-radius: 8px;
     font-size: 18px;
     font-weight: bold;
     cursor: pointer;
+    margin: 0 auto;
 }
 
 .form-submit:hover {
-    background-color: #51b1ff;
+    background-color: green;
+    color: white;
 }
 
 .form-container p {
     text-align: center;
     margin-top: 10px;
+    color: white;
 }
 
 .form-link {
@@ -90,7 +99,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 415px;
+    width: 300px;
     height: 40px;
     background-color: white;
     border: 1px solid #95A0A7;
@@ -100,10 +109,15 @@
     font-size: 18px;
     font-weight: bold;
     cursor: pointer;
+    margin: 20px auto;
 }
 
 .google-sign img {
     width: 32px;
     height: 32px;
     margin-right: 8px;
+}
+
+.google-sign p {
+    color: #220768;
 }

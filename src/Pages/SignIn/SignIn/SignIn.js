@@ -7,6 +7,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import auth from './../../../firebase.init';
 import Loading from './../../Shared/Loading/Loading';
 import SocialLogin from '../SocialLogin/SocialLogin';
+import signin from '../../../images/signin.png';
 
 
 
@@ -88,6 +89,9 @@ const SignIn = () => {
 
     return (
         <section className='sign-in'>
+            <div className='image-container'>
+                <img src={signin} alt="" />
+            </div>
             <div className='form-container'>
                 <div>
                     <h1 className='form-title my-5'>Sign in</h1>
@@ -103,7 +107,7 @@ const SignIn = () => {
                         <input className='form-submit' type="submit" value="Sign in" />
                     </form>
                     <p>
-                        New to Healer? <Link className='form-link' to="/register" onClick={navigateRegister}>Create New Account</Link>
+                        New to Fresh Fruit? <Link className='form-link' to="/register" onClick={navigateRegister}>Create New Account</Link>
                     </p>
                     <p>Forget Password? <button className='form-link btn pe-2 ps-0 pb-2' onClick={resetPassword}>Reset Password</button></p>
                     <div className='divider-line'>

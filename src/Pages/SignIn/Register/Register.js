@@ -4,6 +4,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import Loading from '../../Shared/Loading/Loading';
 import SocialLogin from '../SocialLogin/SocialLogin';
 import auth from './../../../firebase.init';
+import register from '../../../images/register.png';
 import './Register.css';
 
 
@@ -66,6 +67,9 @@ const Register = () => {
 
     return (
         <section>
+            <div>
+                <img src={register} alt="" />
+            </div>
             <div className='form-container register'>
                 <div>
                     <h1 className='form-title my-4'>Register Please</h1>
