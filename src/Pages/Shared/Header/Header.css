@@ -2,7 +2,7 @@
     margin: 0;
 }
 
-.header a {
+.navbar a {
     text-decoration: none;
     color: #150149;
     margin-left: 35px;
@@ -32,9 +32,6 @@
 /* Mobile and Tablet Device */
 
 @media screen and (max-width: 768px) {
-    .header img {
-        height: 60px;
-    }
 
     .header a {
         margin: 0;
