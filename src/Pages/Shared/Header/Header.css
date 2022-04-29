@@ -12,20 +12,47 @@
     font-weight: bold;
 }
 
-.sign-out {
-    text-decoration: none;
+.signin-btn {
     border: none;
+    background: #220768;
+    color: white;
+    padding: 5px 15px;
+    font-weight: bold;
+}
+
+.register-btn {
+    background-color: white;
+    padding: 5px 15px;
+    border: 2px solid #220768;
     color: #220768;
+    font-weight: bold;
+}
+
+.register-btn:hover {
+    background: #220768;
+    color: white;
+    padding: 5px 15px;
+}
+
+.sign-out {
+    border: 2px solid #220768;
+    background: #220768;
+    color: white;
+    padding: 5px 15px;
+    font-weight: bold;
     margin-left: 35px;
     font-size: 18px;
-    font-weight: bold;
-    background-color: white;
     cursor: pointer;
 }
 
 .sign-out:hover {
-    color: #0da1d6;
+    background-color: white;
+    padding: 5px 15px;
+    border: 2px solid #220768;
+    color: #220768;
+    font-weight: bold;
 }
+
 
 
 /* Media Query */

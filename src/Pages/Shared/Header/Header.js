@@ -7,10 +7,14 @@ import auth from '../../../firebase.init';
 import logo from '../../../images/logo.PNG';
 import './Header.css';
 
+
+
 const Header = () => {
 
+    // get user
     const [user] = useAuthState(auth);
 
+    // handle sign out button
     const handleSignOut = () => {
         signOut(auth);
     }
@@ -19,7 +23,7 @@ const Header = () => {
         <header className='header'>
             <Navbar collapseOnSelect expand="lg" sticky='top'>
                 <Container>
-                    <Navbar.Brand as={Link} to="/">
+                    <Navbar.Brand className='brand-logo' as={Link} to="/">
                         <img height={60} src={logo} alt="" />
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -33,8 +37,8 @@ const Header = () => {
                                     <button className='sign-out' onClick={handleSignOut}>Sign Out</button>
                                     :
                                     <>
-                                        <Link to='/signin'><button>Sign In</button></Link>
-                                        <Link to='/register'><button>Register</button></Link>
+                                        <Link to='/signin'><button className='signin-btn'>Sign In</button></Link>
+                                        <Link to='/register'><button className='register-btn'>Register</button></Link>
                                     </>
                             }
                         </Nav>
