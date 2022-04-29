@@ -1,0 +1,42 @@
+.header .brand-logo {
+    margin: 0;
+}
+
+.header a {
+    text-decoration: none;
+    color: #150149;
+    margin-left: 35px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.sign-out {
+    text-decoration: none;
+    border: none;
+    color: rgb(35, 166, 240);
+    margin-left: 35px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: white;
+    cursor: pointer;
+}
+
+.sign-out:hover {
+    color: #0da1d6;
+}
+
+
+/* Media Query */
+/* =========== */
+
+/* Mobile and Tablet Device */
+
+@media screen and (max-width: 768px) {
+    .header img {
+        height: 60px;
+    }
+
+    .header a {
+        margin: 0;
+    }
+}
