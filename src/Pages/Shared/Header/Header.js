@@ -19,7 +19,6 @@ const Header = () => {
                             <Link to='/home'>Home</Link>
                             <Link to='/blogs'>Blogs</Link>
                             <Link to='/about'>About</Link>
-                            <Link to='/checkout'>Checkout</Link>
                             <Link to='/signin'><button>Sign In</button></Link>
                         </Nav>
                     </Navbar.Collapse>
