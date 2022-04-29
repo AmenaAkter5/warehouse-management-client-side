@@ -2,9 +2,11 @@
     margin: 0;
 }
 
+/* #150149 */
+
 .navbar a {
     text-decoration: none;
-    color: #150149;
+    color: #220768;
     margin-left: 35px;
     font-size: 17px;
     font-weight: bold;
@@ -13,7 +15,7 @@
 .sign-out {
     text-decoration: none;
     border: none;
-    color: rgb(35, 166, 240);
+    color: #220768;
     margin-left: 35px;
     font-size: 18px;
     font-weight: bold;
