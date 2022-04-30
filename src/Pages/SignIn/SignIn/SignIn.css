@@ -1,12 +1,11 @@
 .sign-in {
-    /* background-color: #edecf1; */
-    padding: 50px;
+    padding: 50px 0;
     display: flex;
-    justify-content: start;
+    justify-content: space-between;
 }
 
 .image-container {
-    width: 700px;
+    width: 600px;
 }
 
 .sign-in img {
@@ -15,7 +14,6 @@
 
 .form-container {
     width: 380px;
-    height: 540px;
     box-sizing: border-box;
     border-radius: 8px;
     display: flex;

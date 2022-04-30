@@ -88,7 +88,7 @@ const SignIn = () => {
 
 
     return (
-        <section className='sign-in'>
+        <section className='sign-in container'>
             <div className='image-container'>
                 <img src={signin} alt="" />
             </div>
