@@ -11,6 +11,7 @@ import './Register.css';
 
 const Register = () => {
 
+    // display custom error state
     const [customError, setCustomError] = useState('');
 
     // navigate to sign in page
@@ -23,11 +24,14 @@ const Register = () => {
     const location = useLocation();
     const from = location.state?.from?.pathname || '/';
 
+
     // create user hook
     const [createUserWithEmailAndPassword, user, loading, error] = useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
 
+
     // update profile hook
     const [updateProfile, updating] = useUpdateProfile(auth);
+
 
     // loading page handle
     if (loading || updating) {
@@ -66,38 +70,40 @@ const Register = () => {
 
 
     return (
-        <section>
-            <div>
-                <img src={register} alt="" />
-            </div>
-            <div className='form-container register'>
-                <div>
-                    <h1 className='form-title my-4'>Register Please</h1>
-                    <form onSubmit={handleCreateUser}>
-                        <div className='input-group'>
-                            <input type="text" name="name" id="" placeholder='Enter Your Name' required />
+        <section className='register-section'>
+            <div className='container register-container'>
+                <div className='image-container'>
+                    <img className='register-img' src={register} alt="" />
+                </div>
+                <div className='form-container register'>
+                    <div>
+                        <h1 className='form-title my-4'>Register Please</h1>
+                        <form onSubmit={handleCreateUser}>
+                            <div className='input-group'>
+                                <input type="text" name="name" id="" placeholder='Enter Your Name' required />
+                            </div>
+                            <div className='input-group'>
+                                <input type="email" name="email" id="" placeholder='Enter Email' required />
+                            </div>
+                            <div className='input-group'>
+                                <input type="password" name="password" id="" placeholder='Enter Password' required />
+                            </div>
+                            <div className='input-group'>
+                                <input type="password" name="confirmPassword" id="" placeholder='Confirm Your Password' required />
+                            </div>
+                            <p>{loading && 'Loading...'}</p>
+                            <p className='error-message'>{error && error?.message}</p>
+                            <p className='error-message'>{customError}</p>
+                            <input className='form-submit' type="submit" value="Register" />
+                        </form>
+                        <p>
+                            Already have an account? <Link className='form-link' to="/signin" onClick={navigateSignIn}>Sign in</Link>
+                        </p>
+                        <div className='divider-line'>
+                            <span className="line"></span><p>or</p><span className="line"></span>
                         </div>
-                        <div className='input-group'>
-                            <input type="email" name="email" id="" placeholder='Enter Email' required />
-                        </div>
-                        <div className='input-group'>
-                            <input type="password" name="password" id="" placeholder='Enter Password' required />
-                        </div>
-                        <div className='input-group'>
-                            <input type="password" name="confirmPassword" id="" placeholder='Confirm Your Password' required />
-                        </div>
-                        <p>{loading && 'Loading...'}</p>
-                        <p className='error-message'>{error && error?.message}</p>
-                        <p className='error-message'>{customError}</p>
-                        <input className='form-submit' type="submit" value="Register" />
-                    </form>
-                    <p>
-                        Already have an account? <Link className='form-link' to="/signin" onClick={navigateSignIn}>Sign in</Link>
-                    </p>
-                    <div className='divider-line'>
-                        <span className="line"></span><p>or</p><span className="line"></span>
+                        <SocialLogin></SocialLogin>
                     </div>
-                    <SocialLogin></SocialLogin>
                 </div>
             </div>
         </section>
