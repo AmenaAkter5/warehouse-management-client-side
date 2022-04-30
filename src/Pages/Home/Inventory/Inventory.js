@@ -1,18 +1,13 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import './Inventory.css';
 import FruitItems from '../FruitItems/FruitItems';
+import useInventories from '../../../hooks/useInventories';
+
 
 const Inventory = () => {
 
-    // users data load state
-    const [items, setItems] = useState([]);
-
-    // users data fetch
-    useEffect(() => {
-        fetch('services.json')
-            .then(res => res.json())
-            .then(data => setItems(data))
-    }, [])
+    // use inventory items hook
+    const [items] = useInventories();
 
     return (
         <section className='inventory-section'>
