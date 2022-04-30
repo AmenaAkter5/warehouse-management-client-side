@@ -97,7 +97,7 @@ const SignIn = () => {
                     <h1 className='form-title my-5'>Sign in</h1>
                     <form onSubmit={handleUserSignIn}>
                         <div className='input-group'>
-                            <input ref={emailRef} type="email" name="email" id="" placeholder='Enter Email' required />
+                            <input ref={emailRef} type="email" name="email" placeholder='Enter Email' required />
                         </div>
                         <div className='input-group'>
                             <input ref={passwordRef} type="password" name="password" id="" placeholder='Enter Password' required />

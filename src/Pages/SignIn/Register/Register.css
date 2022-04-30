@@ -40,3 +40,27 @@
 .register p {
     color: #220768;
 }
+
+
+/* Media Query */
+/* =========== */
+
+/* Mobile Device */
+
+@media only screen and (max-width: 480px) {
+
+    .register-container {
+        width: 370px;
+        margin: 0 2px;
+        padding: 5px !important;
+    }
+
+    .register-container .image-container {
+        display: none;
+    }
+
+    .form-container {
+        width: 360px;
+        margin: 0;
+    }
+}
