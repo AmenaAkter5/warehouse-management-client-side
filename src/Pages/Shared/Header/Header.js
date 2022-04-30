@@ -33,6 +33,13 @@ const Header = () => {
                             <Link to='/blogs'>Blogs</Link>
                             <Link to='/about'>About</Link>
                             {
+                                user && <>
+                                    <Link to='/manage'>Manage Items</Link>
+                                    <Link to='/add'>Add Item</Link>
+                                    <Link to='/items'>My Items</Link>
+                                </>
+                            }
+                            {
                                 user ?
                                     <button className='sign-out' onClick={handleSignOut}>Sign Out</button>
                                     :

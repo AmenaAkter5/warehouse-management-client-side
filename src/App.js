@@ -7,6 +7,8 @@ import SignIn from './Pages/SignIn/SignIn/SignIn';
 import About from './Pages/About/About';
 import NotFound from './Pages/Shared/NotFound/NotFound';
 import Register from './Pages/SignIn/Register/Register';
+import RequireAuth from './Pages/SignIn/RequireAuth/RequireAuth';
+import ManageItems from './Pages/ManageItems/ManageItems';
 // import Footer from './Pages/Shared/Footer/Footer';
 
 function App() {
@@ -18,6 +20,11 @@ function App() {
         <Route path='/home' element={<Home></Home>}></Route>
         <Route path='/blogs' element={<Blogs></Blogs>}></Route>
         <Route path='/about' element={<About></About>}></Route>
+        <Route path="/manage" element={
+          <RequireAuth>
+            <ManageItems></ManageItems>
+          </RequireAuth>
+        }></Route>
         <Route path='/signin' element={<SignIn></SignIn>}></Route>
         <Route path='/register' element={<Register></Register>}></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
