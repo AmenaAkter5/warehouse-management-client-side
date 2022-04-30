@@ -40,3 +40,24 @@
     padding: 5px 15px;
     font-weight: bold;
 }
+
+
+/* Media Query */
+/* =========== */
+
+/* Mobile Device */
+
+@media only screen and (max-width:576px) {
+
+    .items-description {
+        margin: 0 auto;
+    }
+}
+
+/* Tablet Device */
+
+/* @media only screen and (min-width: 577px) and (max-width: 992px) {
+    .items-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+} */
