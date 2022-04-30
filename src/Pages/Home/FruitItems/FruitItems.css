@@ -1,0 +1,25 @@
+.items-description {
+    background-color: white;
+    width: 330px;
+    height: 480px;
+    box-shadow: 2px 2px 5px #BABECC, 2px 2px 5px #BABECC;
+    box-sizing: border-box;
+    border-radius: 8px;
+    position: relative;
+    text-align: center;
+}
+
+/* .service{
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+} */
+
+.items-description img {
+    width: 100%;
+}
+
+.price {
+    color: #fb17d0;
+}

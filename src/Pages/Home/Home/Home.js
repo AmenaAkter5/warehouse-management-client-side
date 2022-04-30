@@ -3,6 +3,7 @@ import Banner from '../Banner/Banner';
 import Inventory from '../Inventory/Inventory';
 
 const Home = () => {
+
     return (
         <div>
             <Banner></Banner>

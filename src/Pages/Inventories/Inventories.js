@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import './Inventory.css';
-import FruitItems from '../FruitItems/FruitItems';
+import FruitItems from '../Home/FruitItems/FruitItems';
 
-const Inventory = () => {
+const Inventories = () => {
 
     // users data load state
     const [items, setItems] = useState([]);
@@ -23,7 +22,7 @@ const Inventory = () => {
                 </div>
                 <div className="items-container">
                     {
-                        items.slice(0, 3).map(item => <FruitItems
+                        items.map(item => <FruitItems
                             key={item._id}
                             item={item}
                         ></FruitItems>)
@@ -34,4 +33,4 @@ const Inventory = () => {
     );
 };
 
-export default Inventory;
+export default Inventories;
