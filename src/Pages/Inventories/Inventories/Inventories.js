@@ -1,6 +1,6 @@
 import React from 'react';
-import useInventories from '../../hooks/useInventories';
-import FruitItems from '../Home/FruitItems/FruitItems';
+import useInventories from '../../../hooks/useInventories';
+import FruitItems from '../../Home/FruitItems/FruitItems';
 
 const Inventories = () => {
 

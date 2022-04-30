@@ -1,13 +1,21 @@
 .items-description {
     background-color: white;
     width: 330px;
+    height: 520px;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+/* .items-description {
+    background-color: white;
+    width: 330px;
     height: 480px;
     box-shadow: 2px 2px 5px #BABECC, 2px 2px 5px #BABECC;
     box-sizing: border-box;
     border-radius: 8px;
     position: relative;
     text-align: center;
-}
+} */
 
 /* .service{
     border: 1px solid lightgray;
@@ -17,9 +25,18 @@
 } */
 
 .items-description img {
-    width: 100%;
+    width: 130px;
 }
 
 .price {
-    color: #fb17d0;
+    color: #220768;
+}
+
+.update-btn {
+    border: 2px solid #220768;
+    background: #220768;
+    color: white;
+    font-size: 18px;
+    padding: 5px 15px;
+    font-weight: bold;
 }

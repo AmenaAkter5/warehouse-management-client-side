@@ -4,7 +4,7 @@ import './FruitItems.css';
 
 
 const FruitItems = ({ item }) => {
-    const { _id, name, price, description, img } = item
+    const { _id, name, price, description, img, quantity, cart, supplier } = item
 
     const navigate = useNavigate();
 
@@ -17,10 +17,15 @@ const FruitItems = ({ item }) => {
             <div className="d-flex justify-content-center pt-3 mb-3">
                 <img src={img} alt="" />
             </div>
-            <h5 className="text-center fw-bold price">{price}</h5>
-            <h4 className="text-center mb-3">{name}</h4>
+            <h3 className="text-center fw-bold">{name}</h3>
+            <h4 className="text-center mb-3 price">{price}</h4>
+            <h5>Quantity: {quantity}</h5>
+            <h6>Cart: {cart}</h6>
+            <h6>Supplier:  {supplier}</h6>
             <p>{description}</p>
-            <button onClick={() => navigateToServiceDetail(_id)} className='btn btn-primary'>Book: {name}</button>
+            <div className='text-center'>
+                <button onClick={() => navigateToServiceDetail(_id)} className='update-btn'>Update Stock</button>
+            </div>
         </div>
     );
 };

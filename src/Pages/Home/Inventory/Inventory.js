@@ -2,12 +2,21 @@ import React from 'react';
 import './Inventory.css';
 import FruitItems from '../FruitItems/FruitItems';
 import useInventories from '../../../hooks/useInventories';
+import { useNavigate } from 'react-router-dom';
 
 
 const Inventory = () => {
 
     // use inventory items hook
     const [items] = useInventories();
+
+    // use navigate hook
+    const navigate = useNavigate();
+
+    // inventory section button handler
+    const inventoryButtonHandle = () => {
+        navigate('/inventory');
+    }
 
     return (
         <section className='inventory-section'>
@@ -18,14 +27,17 @@ const Inventory = () => {
                 </div>
                 <div className="items-container">
                     {
-                        items.slice(0, 3).map(item => <FruitItems
+                        items.slice(0, 6).map(item => <FruitItems
                             key={item._id}
                             item={item}
                         ></FruitItems>)
                     }
                 </div>
+                <div className='text-center'>
+                    <button onClick={inventoryButtonHandle} style={{ color: '#220768', fontSize: '20px' }} className='btn btn-link mt-5'>Manage Inventories</button>
+                </div>
             </div>
-        </section>
+        </section >
     );
 };
 
