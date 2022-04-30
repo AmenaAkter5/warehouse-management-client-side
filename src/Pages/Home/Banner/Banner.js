@@ -1,21 +1,29 @@
 import React from 'react';
 import './Banner.css';
 import banner from '../../../images/banner.png';
-import { Navigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faAppleWhole } from '@fortawesome/free-solid-svg-icons'
+
 
 const Banner = () => {
 
+    // use navigate hook
+    const navigate = useNavigate();
+
     // banner page button handler
     const aboutButtonHandle = () => {
-        Navigate('/about');
+        navigate('/about');
     }
 
     return (
         <section className='banner'>
             <div className='banner-container container d-flex justify-content-between align-items-center'>
                 <div>
-                    <h5 className='banner-heading mb-3'>HELPING YOU TO MAKE LIFE EASIER</h5>
-                    <h1 className='banner-title mb-4'>Feel Better, move better, be better</h1>
+                    <h5 className='banner-heading mb-3'>HELPING YOU TO MAKE BUSINESS EASIER</h5>
+                    <h1 className='banner-title mb-4'>Store fruits,
+                        <br />
+                        Ensure the freshness. <FontAwesomeIcon className='icon' icon={faAppleWhole} /></h1>
                     <button onClick={aboutButtonHandle} className='banner-btn'>Know More Details</button>
                 </div>
                 <div>

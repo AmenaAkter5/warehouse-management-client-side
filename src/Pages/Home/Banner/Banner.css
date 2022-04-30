@@ -12,6 +12,10 @@
     font-weight: bold;
 }
 
+.icon {
+    color: #aa373b;
+}
+
 .banner-btn {
     border: none;
     padding: 5px 20px;
