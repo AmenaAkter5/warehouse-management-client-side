@@ -5,78 +5,78 @@
         "price": "300",
         "cart": "20",
         "quantity": "200 kg",
-        "supplier": "Manik Islam",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "supplier": "Ferdinand",
+        "description": "Apple is stocked here with much care. Our Expert team try to store the fruits in that way where customers can get the good quality.",
         "img": "https://i.ibb.co/606KG6q/apple.png"
     },
     {
         "_id": 2,
         "name": "Mango",
-        "price": "300",
+        "price": "500",
         "cart": "20",
-        "quantity": "200 kg",
+        "quantity": "600 kg",
         "supplier": "Manik Islam",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
-        "img": "https://i.ibb.co/606KG6q/apple.png"
+        "description": "As a perishable fruit mango is preserved very carefully and with latest technology to get original taste and quality.",
+        "img": "https://i.ibb.co/6yQfyg5/mango.png"
     },
     {
         "_id": 3,
         "name": "Jack Fruit",
-        "price": "300",
-        "cart": "20",
-        "quantity": "200 kg",
-        "supplier": "Manik Islam",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
-        "img": "https://i.ibb.co/606KG6q/apple.png"
+        "price": "400",
+        "cart": "10",
+        "quantity": "200 Pieces",
+        "supplier": "Monir Islam",
+        "description": "Jack Fruit is the fruit of summer. It is also perishable fruit. So, we stored jackfruit in a cold place to keep fresh. Technology helps a lot here.",
+        "img": "https://i.ibb.co/1ZCNN0H/jackfruit.png"
     },
     {
         "_id": 4,
         "name": "Litchi",
         "price": "300",
-        "cart": "20",
+        "cart": "10",
         "quantity": "200 kg",
-        "supplier": "Manik Islam",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
-        "img": "https://i.ibb.co/606KG6q/apple.png"
+        "supplier": "Yeasin Arafat",
+        "description": "Litchi is stocked here with much care. Our Expert team try to store the fruits in that way where customers can get the good quality.",
+        "img": "https://i.ibb.co/R01mzDP/litchi.jpg"
     },
     {
         "_id": 5,
         "name": "Berry",
-        "price": "300",
-        "cart": "20",
-        "quantity": "200 kg",
-        "supplier": "Manik Islam",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
-        "img": "https://i.ibb.co/606KG6q/apple.png"
+        "price": "200",
+        "cart": "10",
+        "quantity": "100 kg",
+        "supplier": "Abrar Fahad",
+        "description": "As a perishable fruit berry is preserved very carefully and with latest technology to get original taste and quality.",
+        "img": "https://i.ibb.co/sPL6Cm4/berry.jpg"
     },
     {
         "_id": 6,
         "name": "Orange",
-        "price": "300",
+        "price": "250",
         "cart": "20",
-        "quantity": "200 kg",
-        "supplier": "Manik Islam",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
-        "img": "https://i.ibb.co/606KG6q/apple.png"
+        "quantity": "100 kg",
+        "supplier": "Ainul Haque",
+        "description": "Orange is grown in hilly area. So, we stored orange in a cold place as like hilly area environment to get real taste and quality.",
+        "img": "https://i.ibb.co/rf3RCQT/orange.jpg"
     },
     {
         "_id": 7,
         "name": "Water Mealon",
-        "price": "300",
-        "cart": "20",
-        "quantity": "200 kg",
-        "supplier": "Manik Islam",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
-        "img": "https://i.ibb.co/606KG6q/apple.png"
+        "price": "400",
+        "cart": "50",
+        "quantity": "500 Pieces",
+        "supplier": "Fojol Mia",
+        "description": "Water Mealon is perishable in summer. Our Expert team try to store the fruits in that way where customers can get the good quality.",
+        "img": "https://i.ibb.co/3m26mJV/watermelon.jpg"
     },
     {
         "_id": 8,
         "name": "Black Berry",
-        "price": "300",
-        "cart": "20",
+        "price": "250",
+        "cart": "10",
         "quantity": "200 kg",
-        "supplier": "Manik Islam",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
-        "img": "https://i.ibb.co/606KG6q/apple.png"
+        "supplier": "Kamrul Haque",
+        "description": "Jack Fruit is the fruit of summer. It is also perishable fruit. So, we stored jackfruit in a cold place to keep fresh. Technology helps a lot here.",
+        "img": "https://i.ibb.co/Fm4jbSD/blackberry.jpg"
     }
 ]

@@ -34,7 +34,7 @@ const Inventory = () => {
                     }
                 </div>
                 <div className='text-center'>
-                    <button onClick={inventoryButtonHandle} style={{ color: '#220768', fontSize: '20px' }} className='btn btn-link mt-5'>Manage Inventories</button>
+                    <button onClick={inventoryButtonHandle} style={{ color: '#220768', fontSize: '20px' }} className='btn btn-link mt-5 px-5 bg-white'>Manage Inventories</button>
                 </div>
             </div>
         </section >

@@ -12,6 +12,8 @@ import ManageItems from './Pages/ManageItems/ManageItems';
 // import Footer from './Pages/Shared/Footer/Footer';
 import Inventories from './Pages/Inventories/Inventories/Inventories';
 
+
+
 function App() {
   return (
     <div>

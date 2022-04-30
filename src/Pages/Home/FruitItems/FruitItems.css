@@ -1,7 +1,7 @@
 .items-description {
     background-color: white;
     width: 330px;
-    height: 520px;
+    height: 530px;
     box-sizing: border-box;
     border-radius: 8px;
 }
@@ -26,10 +26,15 @@
 
 .items-description img {
     width: 130px;
+    height: 130px;
 }
 
 .price {
     color: #220768;
+}
+
+.items-text {
+    text-align: justify;
 }
 
 .update-btn {
