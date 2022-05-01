@@ -19,7 +19,7 @@ const FruitItems = ({ item }) => {
                 <img src={img} alt="" />
             </div>
             <h3 className="text-center fw-bold">{name}</h3>
-            <h4 className="text-center mb-3 price">{price}</h4>
+            <h4 className="text-center mb-3 price">{price}/-</h4>
             <div className='p-2'>
                 <h5>Quantity: {quantity}</h5>
                 <h6>Stocked Cart: {cart}</h6>

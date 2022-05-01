@@ -9,8 +9,8 @@ import NotFound from './Pages/Shared/NotFound/NotFound';
 import Register from './Pages/SignIn/Register/Register';
 import RequireAuth from './Pages/SignIn/RequireAuth/RequireAuth';
 import ManageItems from './Pages/ManageItems/ManageItems';
-// import Footer from './Pages/Shared/Footer/Footer';
 import Inventories from './Pages/Inventories/Inventories/Inventories';
+// import Footer from './Pages/Shared/Footer/Footer';
 
 
 

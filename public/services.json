@@ -21,13 +21,13 @@
     },
     {
         "_id": 3,
-        "name": "Jack Fruit",
+        "name": "Jackfruit",
         "price": "400",
         "cart": "10",
         "quantity": "200 Pieces",
         "supplier": "Monir Islam",
-        "description": "Jack Fruit is the fruit of summer. It is also perishable fruit. So, we stored jackfruit in a cold place to keep fresh. Technology helps a lot here.",
-        "img": "https://i.ibb.co/1ZCNN0H/jackfruit.png"
+        "description": "Jackfruit is the fruit of summer. It is also perishable fruit. So, we stored jackfruit in a cold place to keep fresh. Technology helps a lot here.",
+        "img": "https://i.ibb.co/z7nPy5k/jackfruit.png"
     },
     {
         "_id": 4,
@@ -37,7 +37,7 @@
         "quantity": "200 kg",
         "supplier": "Yeasin Arafat",
         "description": "Litchi is stocked here with much care. Our Expert team try to store the fruits in that way where customers can get the good quality.",
-        "img": "https://i.ibb.co/R01mzDP/litchi.jpg"
+        "img": "https://i.ibb.co/TkKBJxN/litchi.png"
     },
     {
         "_id": 5,
@@ -47,7 +47,7 @@
         "quantity": "100 kg",
         "supplier": "Abrar Fahad",
         "description": "As a perishable fruit berry is preserved very carefully and with latest technology to get original taste and quality.",
-        "img": "https://i.ibb.co/sPL6Cm4/berry.jpg"
+        "img": "https://i.ibb.co/RCPg5tN/berry.png"
     },
     {
         "_id": 6,
@@ -57,7 +57,7 @@
         "quantity": "100 kg",
         "supplier": "Ainul Haque",
         "description": "Orange is grown in hilly area. So, we stored orange in a cold place as like hilly area environment to get real taste and quality.",
-        "img": "https://i.ibb.co/rf3RCQT/orange.jpg"
+        "img": "https://i.ibb.co/XDS7ztN/orange.png"
     },
     {
         "_id": 7,
@@ -67,7 +67,7 @@
         "quantity": "500 Pieces",
         "supplier": "Fojol Mia",
         "description": "Water Mealon is perishable in summer. Our Expert team try to store the fruits in that way where customers can get the good quality.",
-        "img": "https://i.ibb.co/3m26mJV/watermelon.jpg"
+        "img": "https://i.ibb.co/6ydS4yr/watermelon.png"
     },
     {
         "_id": 8,
@@ -76,7 +76,7 @@
         "cart": "10",
         "quantity": "200 kg",
         "supplier": "Kamrul Haque",
-        "description": "Jack Fruit is the fruit of summer. It is also perishable fruit. So, we stored jackfruit in a cold place to keep fresh. Technology helps a lot here.",
-        "img": "https://i.ibb.co/Fm4jbSD/blackberry.jpg"
+        "description": "Black Berry is the fruit of summer. It is also perishable fruit. So, we stored jackfruit in a cold place to keep fresh. Technology helps a lot here.",
+        "img": "https://i.ibb.co/6sfnbdW/blackberry.png"
     }
 ]

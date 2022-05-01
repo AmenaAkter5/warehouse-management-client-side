@@ -1,6 +1,9 @@
 import React from 'react';
+import './Inventories.css';
 import useInventories from '../../../hooks/useInventories';
-import FruitItems from '../../Home/FruitItems/FruitItems';
+import InventoryItems from '../InventoryItems/InventoryItems';
+
+
 
 const Inventories = () => {
 
@@ -8,19 +11,26 @@ const Inventories = () => {
     const [items] = useInventories();
 
     return (
-        <section className='inventory-section'>
+        <section className='inventories-section'>
             <div className="container mx-auto my-5">
                 <div className="title-text">
                     <p>Inventory</p>
-                    <h1>The New Arrival</h1>
+                    <h1>All Inventory Items</h1>
                 </div>
-                <div className="items-container">
+                <div className='ineventory-container'>
+                    {
+                        items.map(item => <InventoryItems
+                            key={item._id}
+                            item={item}
+                        ></InventoryItems>)
+                    }
+                    {/* <br />
                     {
                         items.map(item => <FruitItems
                             key={item._id}
                             item={item}
                         ></FruitItems>)
-                    }
+                    } */}
                 </div>
             </div>
         </section>
