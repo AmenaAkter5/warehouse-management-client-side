@@ -10,6 +10,7 @@ import Register from './Pages/SignIn/Register/Register';
 import RequireAuth from './Pages/SignIn/RequireAuth/RequireAuth';
 import ManageItems from './Pages/ManageItems/ManageItems';
 import Inventories from './Pages/Inventories/Inventories/Inventories';
+import ItemDetail from './Pages/ItemDetail/ItemDetail';
 // import Footer from './Pages/Shared/Footer/Footer';
 
 
@@ -24,6 +25,11 @@ function App() {
         <Route path='/blogs' element={<Blogs></Blogs>}></Route>
         <Route path='/about' element={<About></About>}></Route>
         <Route path='/inventory' element={<Inventories></Inventories>}></Route>
+        <Route path="/inventory/:id" element={
+          <RequireAuth>
+            <ItemDetail></ItemDetail>
+          </RequireAuth>
+        }></Route>
         <Route path="/manage" element={
           <RequireAuth>
             <ManageItems></ManageItems>

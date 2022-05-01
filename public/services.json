@@ -2,9 +2,9 @@
     {
         "_id": 1,
         "name": "Apple",
-        "price": "300",
-        "cart": "20",
-        "quantity": "200 kg",
+        "price": 300,
+        "cart": 20,
+        "quantity": 200,
         "supplier": "Ferdinand",
         "description": "Apple is stocked here with much care. Our Expert team try to store the fruits in that way where customers can get the good quality.",
         "img": "https://i.ibb.co/606KG6q/apple.png"
@@ -12,9 +12,9 @@
     {
         "_id": 2,
         "name": "Mango",
-        "price": "500",
-        "cart": "20",
-        "quantity": "600 kg",
+        "price": 500,
+        "cart": 20,
+        "quantity": 600,
         "supplier": "Manik Islam",
         "description": "As a perishable fruit mango is preserved very carefully and with latest technology to get original taste and quality.",
         "img": "https://i.ibb.co/6yQfyg5/mango.png"
@@ -22,9 +22,9 @@
     {
         "_id": 3,
         "name": "Jackfruit",
-        "price": "400",
-        "cart": "10",
-        "quantity": "200 Pieces",
+        "price": 400,
+        "cart": 10,
+        "quantity": 200,
         "supplier": "Monir Islam",
         "description": "Jackfruit is the fruit of summer. It is also perishable fruit. So, we stored jackfruit in a cold place to keep fresh. Technology helps a lot here.",
         "img": "https://i.ibb.co/z7nPy5k/jackfruit.png"
@@ -32,9 +32,9 @@
     {
         "_id": 4,
         "name": "Litchi",
-        "price": "300",
-        "cart": "10",
-        "quantity": "200 kg",
+        "price": 300,
+        "cart": 10,
+        "quantity": 200,
         "supplier": "Yeasin Arafat",
         "description": "Litchi is stocked here with much care. Our Expert team try to store the fruits in that way where customers can get the good quality.",
         "img": "https://i.ibb.co/TkKBJxN/litchi.png"
@@ -42,9 +42,9 @@
     {
         "_id": 5,
         "name": "Berry",
-        "price": "200",
-        "cart": "10",
-        "quantity": "100 kg",
+        "price": 200,
+        "cart": 10,
+        "quantity": 100,
         "supplier": "Abrar Fahad",
         "description": "As a perishable fruit berry is preserved very carefully and with latest technology to get original taste and quality.",
         "img": "https://i.ibb.co/RCPg5tN/berry.png"
@@ -52,9 +52,9 @@
     {
         "_id": 6,
         "name": "Orange",
-        "price": "250",
-        "cart": "20",
-        "quantity": "100 kg",
+        "price": 250,
+        "cart": 20,
+        "quantity": 100,
         "supplier": "Ainul Haque",
         "description": "Orange is grown in hilly area. So, we stored orange in a cold place as like hilly area environment to get real taste and quality.",
         "img": "https://i.ibb.co/XDS7ztN/orange.png"
@@ -62,9 +62,9 @@
     {
         "_id": 7,
         "name": "Water Mealon",
-        "price": "400",
-        "cart": "50",
-        "quantity": "500 Pieces",
+        "price": 400,
+        "cart": 50,
+        "quantity": 500,
         "supplier": "Fojol Mia",
         "description": "Water Mealon is perishable in summer. Our Expert team try to store the fruits in that way where customers can get the good quality.",
         "img": "https://i.ibb.co/6ydS4yr/watermelon.png"
@@ -72,9 +72,9 @@
     {
         "_id": 8,
         "name": "Black Berry",
-        "price": "250",
-        "cart": "10",
-        "quantity": "200 kg",
+        "price": 250,
+        "cart": 10,
+        "quantity": 200,
         "supplier": "Kamrul Haque",
         "description": "Black Berry is the fruit of summer. It is also perishable fruit. So, we stored jackfruit in a cold place to keep fresh. Technology helps a lot here.",
         "img": "https://i.ibb.co/6sfnbdW/blackberry.png"

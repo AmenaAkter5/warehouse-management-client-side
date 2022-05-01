@@ -13,7 +13,7 @@ const Inventory = () => {
     // use navigate hook
     const navigate = useNavigate();
 
-    // inventory section button handler
+    // manage inventory button handler
     const manageInventoryHandle = () => {
         navigate('/inventory');
     }

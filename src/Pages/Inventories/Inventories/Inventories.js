@@ -9,7 +9,7 @@ import { useNavigate } from 'react-router-dom';
 const Inventories = () => {
 
     // use inventory items hook
-    const [items] = useInventories();
+    const [items, setItems] = useInventories();
 
     // use navigate hook
     const navigate = useNavigate();
@@ -18,6 +18,24 @@ const Inventories = () => {
     const AddItemsButtonHandle = () => {
         navigate('/add');
     }
+
+    // handle Delete button handler for manage inventory page
+    const handleDelete = id => {
+        const proceed = window.confirm('Are you sure to delete?')
+
+        if (proceed) {
+            const url = `http://localhost:5000/fruits/${id}`
+            fetch(url, {
+                method: 'DELETE'
+            })
+                .then(res => res.json())
+                .then(data => {
+                    console.log(data);
+                    const remaining = items.filter(service => service._id !== id);
+                    setItems(remaining);
+                })
+        }
+    };
 
     return (
         <section className='inventories-section'>
@@ -31,11 +49,12 @@ const Inventories = () => {
                         items.map(item => <InventoryItems
                             key={item._id}
                             item={item}
+                            handleDelete={handleDelete}
                         ></InventoryItems>)
                     }
                 </div>
                 <div className='text-center'>
-                    <button onClick={AddItemsButtonHandle} className='mt-5 px-5 update-btn'>Add Items</button>
+                    <button onClick={AddItemsButtonHandle} className='mt-5 px-5 update-btn'>Add More Items</button>
                 </div>
             </div>
         </section>

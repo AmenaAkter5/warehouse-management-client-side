@@ -24,17 +24,33 @@
     justify-content: space-between;
 }
 
-.inventory-items .delete-container {
+.inventory-items .add-delete-container {
     display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
     padding-right: 15px;
+}
+
+.inventory-items .add-button {
+    background: white;
+    border: 0;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.add-icon {
+    color: rgb(43, 146, 43);
+    font-size: 40px;
 }
 
 .inventory-items .delete-button {
     background: rgba(235, 105, 105, 0.3);
     border: 0;
-    height: 55px;
-    width: 55px;
+    height: 45px;
+    width: 45px;
     border-radius: 50%;
     cursor: pointer;
 }

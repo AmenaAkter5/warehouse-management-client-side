@@ -5,12 +5,15 @@ import './FruitItems.css';
 
 const FruitItems = ({ item }) => {
 
+    // destructuring item information
     const { _id, name, price, description, img, quantity, cart, supplier } = item
 
+    // use navigate hook
     const navigate = useNavigate();
 
-    const navigateToServiceDetail = id => {
-        navigate(`/items/${id}`);
+    // update stock button handler
+    const updateStockHandler = id => {
+        navigate(`/inventory/${id}`);
     }
 
     return (
@@ -27,7 +30,7 @@ const FruitItems = ({ item }) => {
                 <p className='mt-2 items-text'>{description}</p>
             </div>
             <div className='text-center'>
-                <button onClick={() => navigateToServiceDetail(_id)} className='update-btn'>Update Stock</button>
+                <button onClick={() => updateStockHandler(_id)} className='update-btn'>Update Stock</button>
             </div>
         </div>
     );

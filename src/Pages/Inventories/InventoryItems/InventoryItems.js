@@ -1,12 +1,23 @@
-import { faTrashAlt } from '@fortawesome/free-solid-svg-icons';
+import { faTrashAlt, faCirclePlus } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './InventoryItems.css';
 
 
-const InventoryItems = ({ item }) => {
+const InventoryItems = ({ item, handleDelete }) => {
 
-    const { name, price, img, quantity, cart, supplier } = item;
+    // destructuring item
+    const { _id, name, price, img, quantity, cart, supplier } = item;
+
+
+    // use navigate hook
+    const navigate = useNavigate();
+
+    // update stock button handler
+    const updateStockHandler = id => {
+        navigate(`/inventory/${id}`);
+    }
 
     return (
         <div className='inventory-items'>
@@ -18,11 +29,14 @@ const InventoryItems = ({ item }) => {
                     <h5 className='mb-1'>{name}</h5>
                     <h6 className='mb-1'>Price: <span style={{ color: '#220768' }}>{price}/-</span></h6>
                     <p>Cart: {cart}</p>
-                    <p>Quantity: {quantity}</p>
+                    <p>Quantity: {quantity} {name === 'Jackfruit' || name === 'Water Mealon' ? 'Pieces' : 'Kg'}</p>
                     <p>Supplier: {supplier}</p>
                 </div>
-                <div className="delete-container">
-                    <button className='delete-button'>
+                <div className="add-delete-container">
+                    <button onClick={() => updateStockHandler(_id)} className='add-button'>
+                        <FontAwesomeIcon className='add-icon' icon={faCirclePlus}></FontAwesomeIcon>
+                    </button>
+                    <button onClick={() => handleDelete(_id)} className='delete-button' >
                         <FontAwesomeIcon className='delete-icon' icon={faTrashAlt}></FontAwesomeIcon>
                     </button>
                 </div>

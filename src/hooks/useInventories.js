@@ -6,9 +6,15 @@ const useInventories = () => {
     // inventory items data load state
     const [items, setItems] = useState([]);
 
-    // inventory items data fetch
-    useEffect(() => {
+    // data fetch
+    /* useEffect(() => {
         fetch('services.json')
+            .then(res => res.json())
+            .then(data => setItems(data))
+    }, []) */
+
+    useEffect(() => {
+        fetch('http://localhost:5000/fruits')
             .then(res => res.json())
             .then(data => setItems(data))
     }, [])
