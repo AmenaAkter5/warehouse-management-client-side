@@ -8,7 +8,7 @@ const NotFound = () => {
         <section className='notfound'>
             <div className='notfound-container container d-flex justify-content-between align-items-center'>
                 <div>
-                    <h1 className='notfound-title mb-4'>Oops! You may<br /> <span className='text-danger'>lost</span> your route!</h1>
+                    <h1 className='notfound-title mb-4'>Oops! You may<br /> <span className='text-danger'>lost</span> your path!</h1>
                 </div>
                 <div>
                     <img className='notfound-img img-fluid' src={notfound} alt="" />

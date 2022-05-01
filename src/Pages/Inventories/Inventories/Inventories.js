@@ -14,14 +14,15 @@ const Inventories = () => {
     // use navigate hook
     const navigate = useNavigate();
 
-    // inventory section button handler
+    // add items button handler
     const AddItemsButtonHandle = () => {
         navigate('/add');
     }
 
-    // handle Delete button handler for manage inventory page
+    // Delete button handler of manage inventory page
     const handleDelete = id => {
-        const proceed = window.confirm('Are you sure to delete?')
+
+        const proceed = window.confirm('Are you sure to delete?');
 
         if (proceed) {
             const url = `http://localhost:5000/fruits/${id}`

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 
 const ItemDetail = () => {
 
@@ -17,11 +17,23 @@ const ItemDetail = () => {
             .then(data => setItem(data))
     }, [id]);
 
+
+    // use navigate hook
+    const navigate = useNavigate();
+
+    // manage inventory button handler
+    const manageInventoryHandle = () => {
+        navigate('/inventory');
+    }
+
     return (
         <div>
             <h1>This is Item Detail Page</h1>
             <h5>Id: {id}</h5>
             <h6>Name: {item.name}</h6>
+            <div className='text-center'>
+                <button onClick={manageInventoryHandle} style={{ color: '#220768', fontSize: '20px' }} className='btn btn-link fw-bold mt-5 px-5 bg-white'>Manage Inventories</button>
+            </div>
         </div>
     );
 };

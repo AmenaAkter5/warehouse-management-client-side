@@ -76,7 +76,27 @@
         "cart": 10,
         "quantity": 200,
         "supplier": "Kamrul Haque",
-        "description": "Black Berry is the fruit of summer. It is also perishable fruit. So, we stored jackfruit in a cold place to keep fresh. Technology helps a lot here.",
+        "description": "Black Berry is the fruit of summer. It is also perishable fruit. So, we stored black berry in a cold place to keep fresh. Technology helps a lot here.",
         "img": "https://i.ibb.co/6sfnbdW/blackberry.png"
+    },
+    {
+        "_id": 9,
+        "name": "Guava",
+        "price": 150,
+        "cart": 10,
+        "quantity": 100,
+        "supplier": "Md Rashed",
+        "description": "Guava is the very good fruit. It is also perishable fruit. So, we stored Guava in a cold place to keep fresh. Technology helps a lot here.",
+        "img": "https://i.ibb.co/XSrZymw/guava.png"
+    },
+    {
+        "_id": 10,
+        "name": "Pomegrenate",
+        "price": 200,
+        "cart": 10,
+        "quantity": 200,
+        "supplier": "Manik Islam",
+        "description": "Pomegrenate is the very good fruit. It is not so perishable. So, we stored Pomegrenate in a cold place to keep fresh. Technology helps a lot here.",
+        "img": "https://i.ibb.co/CKkGXRG/pomegrenate.png"
     }
 ]
