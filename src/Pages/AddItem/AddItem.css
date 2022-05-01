@@ -1,0 +1,28 @@
+.add-container {
+    width: 50%;
+}
+
+.add-text {
+    color: #220768;
+    text-align: center;
+}
+
+.add-btn {
+    background-color: #220768;
+    color: white;
+    border: none;
+    font-weight: bold;
+}
+
+
+/* Media Query */
+/* =========== */
+
+/* Mobile Device */
+
+@media only screen and (max-width:576px) {
+
+    .add-container {
+        width: 80%;
+    }
+}

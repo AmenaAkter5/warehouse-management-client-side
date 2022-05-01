@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useSendPasswordResetEmail, useSignInWithEmailAndPassword, } from 'react-firebase-hooks/auth'
 import './SignIn.css';
-import { ToastContainer, toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import auth from './../../../firebase.init';
 import Loading from './../../Shared/Loading/Loading';
@@ -114,7 +114,6 @@ const SignIn = () => {
                         <span className="line"></span><p>or</p><span className="line"></span>
                     </div>
                     <SocialLogin></SocialLogin>
-                    <ToastContainer />
                 </div>
             </div>
         </section>

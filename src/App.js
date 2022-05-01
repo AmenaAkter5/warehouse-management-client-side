@@ -12,6 +12,7 @@ import ManageItems from './Pages/ManageItems/ManageItems';
 import Inventories from './Pages/Inventories/Inventories/Inventories';
 import ItemDetail from './Pages/ItemDetail/ItemDetail';
 import AddItem from './Pages/AddItem/AddItem';
+import { ToastContainer } from 'react-toastify';
 // import Footer from './Pages/Shared/Footer/Footer';
 
 
@@ -46,6 +47,7 @@ function App() {
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
       {/* <Footer></Footer> */}
+      <ToastContainer></ToastContainer>
     </div>
   );
 }

@@ -1,5 +1,7 @@
 import React from 'react';
+import './AddItem.css';
 import { useForm } from "react-hook-form";
+import { toast } from 'react-toastify';
 
 
 
@@ -21,15 +23,18 @@ const AddItem = () => {
         })
             .then(res => res.json())
             .then(result => {
-                console.log(result);
+                // toast
+                if (result.insertedId) {
+                    toast('Your Item is added successfully!!');
+                }
             })
         reset();
     };
 
 
     return (
-        <div className='w-50 my-4 mx-auto'>
-            <h1>Add a new fruit item in warehouse</h1>
+        <div className='my-4 pt-2 mx-auto add-container'>
+            <h1 className='add-text mb-3'>Add a new fruit item in warehouse</h1>
             <form className='d-flex flex-column' onSubmit={handleSubmit(onSubmit)}>
                 <input className='mb-3 p-1' placeholder='Name' {...register("name", { required: true, maxLength: 20 })} />
                 <textarea className='mb-3 p-1' placeholder='Description' {...register("description")} />
@@ -38,7 +43,7 @@ const AddItem = () => {
                 <input className='mb-3 p-1' placeholder='Quantity' type="number" {...register("quantity")} />
                 <input className='mb-3 p-1' placeholder='Supplier Name' type="text" {...register("supplier")} />
                 <input className='mb-3 p-1' placeholder='Photo URL' type="text" {...register("img")} />
-                <input className='p-1' type="submit" value="Add Item" />
+                <input className='add-btn p-1' type="submit" value="Add Item" />
             </form>
         </div>
     );
