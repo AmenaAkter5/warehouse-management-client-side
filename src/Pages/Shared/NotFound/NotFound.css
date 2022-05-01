@@ -1,0 +1,33 @@
+.notfound-container {
+    height: 530px;
+}
+
+.notfound-title {
+    font-size: 50px;
+    font-weight: bold;
+    color: #220768;
+}
+
+
+/* Media Query */
+
+/* Mobile Device */
+
+@media screen and (max-width: 768px) {
+    .notfound {
+        height: 560px;
+    }
+
+    .notfound-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .notfound-title {
+        margin: 5px 20px;
+    }
+
+    .notfound-img {
+        margin: 20px 0;
+    }
+}

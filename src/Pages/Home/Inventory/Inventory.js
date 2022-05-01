@@ -14,7 +14,7 @@ const Inventory = () => {
     const navigate = useNavigate();
 
     // inventory section button handler
-    const inventoryButtonHandle = () => {
+    const manageInventoryHandle = () => {
         navigate('/inventory');
     }
 
@@ -34,7 +34,7 @@ const Inventory = () => {
                     }
                 </div>
                 <div className='text-center'>
-                    <button onClick={inventoryButtonHandle} style={{ color: '#220768', fontSize: '20px' }} className='btn btn-link mt-5 px-5 bg-white'>Manage Inventories</button>
+                    <button onClick={manageInventoryHandle} style={{ color: '#220768', fontSize: '20px' }} className='btn btn-link mt-5 px-5 bg-white'>Manage Inventories</button>
                 </div>
             </div>
         </section >

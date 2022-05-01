@@ -6,7 +6,7 @@ import './InventoryItems.css';
 
 const InventoryItems = ({ item }) => {
 
-    const { name, price, img, quantity, cart, supplier } = item
+    const { name, price, img, quantity, cart, supplier } = item;
 
     return (
         <div className='inventory-items'>

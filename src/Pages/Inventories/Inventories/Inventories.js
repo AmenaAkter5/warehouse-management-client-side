@@ -2,6 +2,7 @@ import React from 'react';
 import './Inventories.css';
 import useInventories from '../../../hooks/useInventories';
 import InventoryItems from '../InventoryItems/InventoryItems';
+import { useNavigate } from 'react-router-dom';
 
 
 
@@ -9,6 +10,14 @@ const Inventories = () => {
 
     // use inventory items hook
     const [items] = useInventories();
+
+    // use navigate hook
+    const navigate = useNavigate();
+
+    // inventory section button handler
+    const AddItemsButtonHandle = () => {
+        navigate('/add');
+    }
 
     return (
         <section className='inventories-section'>
@@ -24,13 +33,9 @@ const Inventories = () => {
                             item={item}
                         ></InventoryItems>)
                     }
-                    {/* <br />
-                    {
-                        items.map(item => <FruitItems
-                            key={item._id}
-                            item={item}
-                        ></FruitItems>)
-                    } */}
+                </div>
+                <div className='text-center'>
+                    <button onClick={AddItemsButtonHandle} className='mt-5 px-5 update-btn'>Add Items</button>
                 </div>
             </div>
         </section>
