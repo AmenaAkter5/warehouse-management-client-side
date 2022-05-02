@@ -1,0 +1,26 @@
+.item-detail-section {
+    padding: 40px 0;
+}
+
+.item-detail-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.item-detail {
+    background-color: white;
+    width: 35%;
+    padding: 15px 20px;
+    /* width: 330px;
+    height: 480px; */
+    box-shadow: 2px 2px 5px #BABECC, 2px 2px 5px #BABECC;
+    box-sizing: border-box;
+    border-radius: 8px;
+    position: relative;
+}
+
+.item-detail img {
+    width: 130px;
+    height: 130px;
+}
