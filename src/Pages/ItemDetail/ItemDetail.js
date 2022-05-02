@@ -21,18 +21,11 @@ const ItemDetail = () => {
     }, [id, item]);
 
 
-    // use navigate hook
-    const navigate = useNavigate();
-
-    // manage inventory button handler
-    const manageInventoryHandle = () => {
-        navigate('/inventory');
-    }
-
 
     // delivered button handle
     const deliverdButtonHandle = () => {
 
+        // update quantity
         const quantity = item.quantity - 1;
         const updatedItem = { quantity };
 
@@ -51,6 +44,44 @@ const ItemDetail = () => {
             })
     };
 
+
+    // form submission handle
+    const handleUpdateQuantity = event => {
+        event.preventDefault();
+
+        // update quantity
+        const restockedQuantity = event.target.quantity.value;
+        const quantity = item.quantity + parseInt(restockedQuantity);
+
+        const updatedItem = { quantity };
+
+        // update data to server
+        const url = `http://localhost:5000/fruits/${id}`
+        fetch(url, {
+            method: 'PUT',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(updatedItem),
+        })
+            .then(response => response.json())
+            .then(data => {
+                // console.log('Success:', data);
+                event.target.reset();
+            })
+    };
+
+
+    // use navigate hook
+    const navigate = useNavigate();
+
+    // manage inventory button handler
+    const manageInventoryHandle = () => {
+        navigate('/inventory');
+    }
+
+
+
     return (
         <section className='item-detail-section'>
             <div className="title-text">
@@ -59,7 +90,7 @@ const ItemDetail = () => {
             </div>
             <div className='item-detail-container'>
                 <div className='item-detail'>
-                    <div className="d-flex justify-content-center mb-3">
+                    <div className="d-flex justify-content-center mb-0">
                         <img src={item.img} alt="" />
                     </div>
                     <h4 className="text-center fw-bold">{item.name}</h4>
@@ -75,8 +106,16 @@ const ItemDetail = () => {
                         </div>
                     </div>
                 </div>
-                <div>
-                    <input type="number" name="" id="" />
+                <div className='restock'>
+                    <div className='restock-content'>
+                        <div>
+                            <h3 className='text-center text-white mb-4'>Restock the items</h3>
+                        </div>
+                        <form onSubmit={handleUpdateQuantity} className='text-center'>
+                            <input className='me-2 p-1 w-50' type="number" name="quantity" id="" placeholder='Input Your Item Number' />
+                            <input style={{ color: '#220768' }} className='px-3 py-1 fw-bold' type="submit" value="Restock" />
+                        </form>
+                    </div>
                 </div>
             </div>
             <div className='text-center'>
