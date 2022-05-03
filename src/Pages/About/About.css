@@ -1,0 +1,17 @@
+.about {
+    width: 600px;
+    margin: 0 auto;
+    text-align: justify;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 2px 2px 5px #BABECC, 2px 2px 5px #BABECC;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .about {
+        width: 98%;
+        margin: 0 auto;
+    }
+}

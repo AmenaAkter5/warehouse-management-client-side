@@ -8,8 +8,8 @@ const PackageThree = () => {
             <h3>1200/-</h3>
             <h3>Premium</h3>
             <p>Storing your products for exporting purpose.</p>
-            <p><FontAwesomeIcon className='me-2 p-1 icon-style' icon={faCheck}></FontAwesomeIcon>Highest technology is used</p>
-            <p><FontAwesomeIcon className='me-2 p-1 icon-style' icon={faCheck}></FontAwesomeIcon>Maintain international law to preserve</p>
+            <p><FontAwesomeIcon className='me-2 p-1 icon-style' icon={faCheck}></FontAwesomeIcon>Latest technology is used</p>
+            <p><FontAwesomeIcon className='me-2 p-1 icon-style' icon={faCheck}></FontAwesomeIcon>Maintain international law to preserve items</p>
             <p><FontAwesomeIcon className='me-2 p-1 icon-style' icon={faCheck}></FontAwesomeIcon>Event support</p>
             <p><FontAwesomeIcon className='me-2 p-1 icon-style' icon={faCheck}></FontAwesomeIcon>Well Managed</p>
             <p><FontAwesomeIcon className='me-2 p-1 icon-style' icon={faCheck}></FontAwesomeIcon>per day bill</p>
