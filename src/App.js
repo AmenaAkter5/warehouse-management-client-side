@@ -14,7 +14,7 @@ import ItemDetail from './Pages/ItemDetail/ItemDetail';
 import AddItem from './Pages/AddItem/AddItem';
 import { ToastContainer } from 'react-toastify';
 import MyItems from './Pages/MyItems/MyItems';
-// import Footer from './Pages/Shared/Footer/Footer';
+import Footer from './Pages/Shared/Footer/Footer';
 
 
 
@@ -56,7 +56,7 @@ function App() {
         <Route path='/register' element={<Register></Register>}></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
-      {/* <Footer></Footer> */}
+      <Footer></Footer>
       <ToastContainer></ToastContainer>
     </div>
   );
