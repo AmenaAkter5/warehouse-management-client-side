@@ -6,7 +6,7 @@ import './FruitItems.css';
 const FruitItems = ({ item }) => {
 
     // destructuring item information
-    const { _id, name, price, description, img, quantity, cart, supplier } = item
+    const { _id, name, price, description, img, quantity, supplier } = item
 
     // use navigate hook
     const navigate = useNavigate();
