@@ -19,7 +19,7 @@ const MyItems = () => {
 
         const getMyItems = async () => {
             const email = user?.email;
-            console.log(email);
+            // console.log(email);
             const url = `http://localhost:5000/items?email=${email}`
             try {
                 const { data } = await axiosPrivate.get(url)
@@ -38,12 +38,12 @@ const MyItems = () => {
 
 
     // Delete button handler of manage inventory page
-    const handleDelete = id => {
+    const handleDeleteItems = id => {
 
         const proceed = window.confirm('Are you sure to delete?');
 
         if (proceed) {
-            let url = `http://localhost:5000/items/${id}`
+            const url = `http://localhost:5000/items/${id}`
             fetch(url, {
                 method: 'DELETE'
             })
@@ -63,20 +63,21 @@ const MyItems = () => {
                     <p>Your Items</p>
                     <h1 className='mb-0 pb-0'>All Items Are Added By You</h1>
                 </div>
-                <ul>
-                    {/* {
-                    myItems.map(myItem =>
-                        <li key={myItem._id}>
-                            {myItem.email}: {myItem.data.name} <button onClick={() => handleDelete(myItem._id)}>X</button>
+                {/* <ul>
+                    {
+                        myItems.map(myItem => <li
+                            key={myItem._id}>
+                            {myItem.email}: {myItem.data.name} <button onClick={() => handleDeleteItems(myItem._id)}>X</button>
                         </li>)
-                } */}
-                </ul>
+                    }
+                </ul> */}
                 <div className='ineventory-container'>
                     {
                         myItems.map(myItem => <MyItemsDetail
                             key={myItem._id}
-                            item={myItem.data}
-                            handleDelete={handleDelete}
+                            id={myItem._id}
+                            items={myItem.data}
+                            handleDeleteItems={handleDeleteItems}
                         ></MyItemsDetail>)
                     }
                 </div>

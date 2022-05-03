@@ -1,21 +1,13 @@
-import { faCirclePlus, faTrashAlt } from '@fortawesome/free-solid-svg-icons';
+import { faTrashAlt } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
 
-const MyItemsDetail = ({ item, handleDelete }) => {
+
+const MyItemsDetail = ({ items, handleDeleteItems, id }) => {
 
     // destructuring item
-    const { _id, name, price, img, quantity, supplier } = item;
+    const { name, price, img, quantity, supplier } = items;
 
-
-    // use navigate hook
-    const navigate = useNavigate();
-
-    // update stock button handler
-    const updateStockHandler = id => {
-        navigate(`/inventory/${id}`);
-    }
 
     return (
         <div className='inventory-items'>
@@ -30,10 +22,7 @@ const MyItemsDetail = ({ item, handleDelete }) => {
                     <p>Supplier: {supplier}</p>
                 </div>
                 <div className="add-delete-container">
-                    <button onClick={() => updateStockHandler(_id)} className='add-button'>
-                        <FontAwesomeIcon className='add-icon' icon={faCirclePlus}></FontAwesomeIcon>
-                    </button>
-                    <button onClick={() => handleDelete(_id)} className='delete-button' >
+                    <button onClick={() => handleDeleteItems(id)} className='delete-button' >
                         <FontAwesomeIcon className='delete-icon' icon={faTrashAlt}></FontAwesomeIcon>
                     </button>
                 </div>

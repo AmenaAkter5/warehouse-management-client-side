@@ -1,0 +1,16 @@
+.subscribe {
+    height: 200px;
+    background-color: #220768;
+}
+
+/* .form-container {
+    width: 200px;
+} */
+
+.subscribe-btn {
+    border-color: #f62147;
+    background-color: #f62147;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}

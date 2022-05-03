@@ -37,8 +37,10 @@ const SignIn = () => {
     // password reset email sent hook
     const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(auth);
 
-    // token hook
+
+    // use token hook
     const [token] = useToken(user);
+
 
     // loading page
     if (loading || sending) {
@@ -84,7 +86,7 @@ const SignIn = () => {
     }
 
 
-    // after get user redirect to the previous page
+    // after get verified user redirect to the previous page
     if (token) {
         navigate(from, { replace: true });
     }

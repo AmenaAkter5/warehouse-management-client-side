@@ -80,11 +80,10 @@ const AddItem = () => {
                 <input className='mb-3 p-1' placeholder='Name' {...register("name", { required: true, maxLength: 20 })} />
                 <textarea className='mb-3 p-1' placeholder='Description' {...register("description")} />
                 <input className='mb-3 p-1' placeholder='Price' type="number" {...register("price")} />
-                <input className='mb-3 p-1' placeholder='Cart' type="number" {...register("cart")} />
                 <input className='mb-3 p-1' placeholder='Quantity' type="number" {...register("quantity")} />
                 <input className='mb-3 p-1' placeholder='Supplier Name' type="text" {...register("supplier")} />
                 <input className='mb-3 p-1' placeholder='Photo URL' type="text" {...register("img")} />
-                <input className='add-btn p-1' type="submit" value="Add Item" />
+                <input className='add-btn py-1 px-3' type="submit" value="Add Item" />
             </form>
         </div>
     );

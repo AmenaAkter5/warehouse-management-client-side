@@ -14,10 +14,12 @@ const Register = () => {
     // display custom error state
     const [customError, setCustomError] = useState('');
 
+
     // navigate to sign in page
     const navigateSignIn = () => {
         navigate('/signin');
     }
+
 
     // page redirect handle after get user
     const navigate = useNavigate();
@@ -63,7 +65,7 @@ const Register = () => {
     }
 
 
-    // after get user redirect to the previous page
+    // after get verified user redirect to the previous page
     if (user) {
         navigate(from, { replace: true })
     }
