@@ -38,7 +38,7 @@ mobile.
 * In this project the React Router is applied which is also popular to make a Single Page Application (SPA).
 * firebase is used for email-password authentication and hosting.
 * React-firebase-hooks are used to make easier the authentication process.
-* React bootstrap, React toast, React-icons, axios are also used here.
+* React bootstrap, React toast, React-hook-forms, React-icons, axios etc are also used here.
 
 
 
