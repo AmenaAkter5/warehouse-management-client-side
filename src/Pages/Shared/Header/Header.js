@@ -31,6 +31,7 @@ const Header = () => {
                         <Nav className="navbar ms-auto">
                             <Link to='/home'>Home</Link>
                             <Link to='/blogs'>Blogs</Link>
+                            <Link to='/about'>About</Link>
                             {
                                 user && <>
                                     <Link to='/inventory'>Manage Inventory</Link>

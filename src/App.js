@@ -8,7 +8,6 @@ import About from './Pages/About/About';
 import NotFound from './Pages/Shared/NotFound/NotFound';
 import Register from './Pages/SignIn/Register/Register';
 import RequireAuth from './Pages/SignIn/RequireAuth/RequireAuth';
-import ManageItems from './Pages/ManageItems/ManageItems';
 import Inventories from './Pages/Inventories/Inventories/Inventories';
 import ItemDetail from './Pages/ItemDetail/ItemDetail';
 import AddItem from './Pages/AddItem/AddItem';
@@ -45,11 +44,6 @@ function App() {
         <Route path="/items" element={
           <RequireAuth>
             <MyItems></MyItems>
-          </RequireAuth>
-        }></Route>
-        <Route path="/manage" element={
-          <RequireAuth>
-            <ManageItems></ManageItems>
           </RequireAuth>
         }></Route>
         <Route path='/signin' element={<SignIn></SignIn>}></Route>

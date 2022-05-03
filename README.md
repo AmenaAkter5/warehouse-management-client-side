@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+# Fresh Fruit
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is linked with [Firebase](https://warehouse-management-e55db.web.app/) and [Mongodb](https://pure-cliffs-64798.herokuapp.com/).
 
-## Available Scripts
 
-In the project directory, you can run:
+Because, Firebase is using for authentication and hosting this site.
+Mongodb is used to store data. This site stores its data in database 
+so it is a dynamic website with full responsiveness on desktop and 
+mobile.
 
-### `yarn start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+====================================================
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## [Live Website Link](https://warehouse-management-e55db.web.app/)
 
-### `yarn test`
+### Click here to see the website: https://warehouse-management-e55db.web.app/
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `yarn build`
+=============================================
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Project - Details :
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* This is the Project of a `Fruit Warehouse Management` Site. 
+* Here I make a project for a `Fruit Warehouse` where various dealers can store their fruits by paying a proper rent fee. 
+* This Warehouse provides different types of `storing packages` of fruits according to the demand of clients. 
+* The packages name and price is updated in this site.
+* Clients can add his items updated data by logging in this site.
+* Authorized people can manage inventories data of this site.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+======================================================
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Technologies are used for this project :
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+* This Project is done by Reactjs which is very popular js library.
+* In this project the React Router is applied which is also popular to make a Single Page Application (SPA).
+* firebase is used for email-password authentication and hosting.
+* React-firebase-hooks are used to make easier the authentication process.
+* React bootstrap, React toast, React-icons, axios are also used here.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+==============================================
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+## [Server Side link](https://pure-cliffs-64798.herokuapp.com/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Click here for see the link: https://pure-cliffs-64798.herokuapp.com/
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
