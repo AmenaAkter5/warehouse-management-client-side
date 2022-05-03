@@ -1,11 +1,9 @@
-import { faTrashAlt, faCirclePlus } from '@fortawesome/free-solid-svg-icons';
+import { faCirclePlus, faTrashAlt } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import './InventoryItems.css';
 
-
-const InventoryItems = ({ item, handleDelete }) => {
+const MyItemsDetail = ({ item, handleDelete }) => {
 
     // destructuring item
     const { _id, name, price, img, quantity, supplier } = item;
@@ -44,4 +42,4 @@ const InventoryItems = ({ item, handleDelete }) => {
     );
 };
 
-export default InventoryItems;
+export default MyItemsDetail;

@@ -25,7 +25,6 @@ const FruitItems = ({ item }) => {
             <h4 className="text-center mb-3 price">{price}/-</h4>
             <div className='p-2'>
                 <h5>Quantity: {quantity} {name === 'Jackfruit' || name === 'Water Mealon' ? 'Pieces' : 'Kg'}</h5>
-                <h6>Stocked Cart: {cart}</h6>
                 <h6>Supplier:  {supplier}</h6>
                 <p className='mt-2 items-text'>{description}</p>
             </div>

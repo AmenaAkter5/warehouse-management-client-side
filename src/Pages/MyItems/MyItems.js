@@ -3,8 +3,10 @@ import React, { useEffect, useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useNavigate } from 'react-router-dom';
 import axiosPrivate from '../../api/axiosPrivate';
-// import axiosPrivate from '../../api/axiosPrivate';
 import auth from '../../firebase.init';
+import MyItemsDetail from '../MyItemsDetail/MyItemsDetail';
+
+
 
 const MyItems = () => {
     const [user] = useAuthState(auth);
@@ -21,13 +23,6 @@ const MyItems = () => {
             const url = `http://localhost:5000/items?email=${email}`
             try {
                 const { data } = await axiosPrivate.get(url)
-
-                /* const { data } = await axios.get(url, {
-                    headers: {
-                        authorization: `Bearer ${localStorage.getItem('accessToken')}`
-                    }
-                }); */
-                console.log(data);
                 setMyItems(data);
             }
             catch (error) {
@@ -39,19 +34,54 @@ const MyItems = () => {
             }
         }
         getMyItems();
-    }, [user])
+    }, [user, navigate])
+
+
+    // Delete button handler of manage inventory page
+    const handleDelete = id => {
+
+        const proceed = window.confirm('Are you sure to delete?');
+
+        if (proceed) {
+            let url = `http://localhost:5000/items/${id}`
+            fetch(url, {
+                method: 'DELETE'
+            })
+                .then(res => res.json())
+                .then(data => {
+                    console.log(data);
+                    const remaining = myItems.filter(myItem => myItem._id !== id);
+                    setMyItems(remaining);
+                })
+        }
+    };
 
     return (
-        <div className='w-50 mx-auto'>
-            <h1>Your Items: {myItems.length}</h1>
-            <ul>
-                {
-                    myItems.map(myItem => <li key={myItem._id}>
-                        {myItem.email}: {myItem.data.name}
-                    </li>)
-                }
-            </ul>
-        </div>
+        <section className='inventories-section py-5 mb-5'>
+            <div className='mx-auto my-5 container'>
+                <div className="title-text">
+                    <p>Your Items</p>
+                    <h1 className='mb-0 pb-0'>All Items Are Added By You</h1>
+                </div>
+                <ul>
+                    {/* {
+                    myItems.map(myItem =>
+                        <li key={myItem._id}>
+                            {myItem.email}: {myItem.data.name} <button onClick={() => handleDelete(myItem._id)}>X</button>
+                        </li>)
+                } */}
+                </ul>
+                <div className='ineventory-container'>
+                    {
+                        myItems.map(myItem => <MyItemsDetail
+                            key={myItem._id}
+                            item={myItem.data}
+                            handleDelete={handleDelete}
+                        ></MyItemsDetail>)
+                    }
+                </div>
+            </div>
+        </section>
     );
 };
 
