@@ -8,6 +8,7 @@ import auth from './../../../firebase.init';
 import Loading from './../../Shared/Loading/Loading';
 import SocialLogin from '../SocialLogin/SocialLogin';
 import signin from '../../../images/signin.png';
+import useToken from '../../../hooks/useToken';
 
 
 
@@ -36,6 +37,8 @@ const SignIn = () => {
     // password reset email sent hook
     const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(auth);
 
+    // token hook
+    const [token] = useToken(user);
 
     // loading page
     if (loading || sending) {
@@ -82,7 +85,7 @@ const SignIn = () => {
 
 
     // after get user redirect to the previous page
-    if (user) {
+    if (token) {
         navigate(from, { replace: true });
     }
 

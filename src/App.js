@@ -13,6 +13,7 @@ import Inventories from './Pages/Inventories/Inventories/Inventories';
 import ItemDetail from './Pages/ItemDetail/ItemDetail';
 import AddItem from './Pages/AddItem/AddItem';
 import { ToastContainer } from 'react-toastify';
+import MyItems from './Pages/MyItems/MyItems';
 // import Footer from './Pages/Shared/Footer/Footer';
 
 
@@ -36,7 +37,16 @@ function App() {
             <ItemDetail></ItemDetail>
           </RequireAuth>
         }></Route>
-        <Route path='/add' element={<AddItem></AddItem>}></Route>
+        <Route path="/items" element={
+          <RequireAuth>
+            <MyItems></MyItems>
+          </RequireAuth>
+        }></Route>
+        <Route path="/add" element={
+          <RequireAuth>
+            <AddItem></AddItem>
+          </RequireAuth>
+        }></Route>
         <Route path="/manage" element={
           <RequireAuth>
             <ManageItems></ManageItems>
