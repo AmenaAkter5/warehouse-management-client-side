@@ -6,6 +6,7 @@ import SocialLogin from '../SocialLogin/SocialLogin';
 import auth from './../../../firebase.init';
 import register from '../../../images/register.png';
 import './Register.css';
+import useToken from '../../../hooks/useToken';
 
 
 
@@ -29,6 +30,10 @@ const Register = () => {
 
     // create user hook
     const [createUserWithEmailAndPassword, user, loading, error] = useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
+
+
+    // use token
+    const [token] = useToken(user);
 
 
     // update profile hook
@@ -66,7 +71,7 @@ const Register = () => {
 
 
     // after get verified user redirect to the previous page
-    if (user) {
+    if (token) {
         navigate(from, { replace: true })
     }
 
