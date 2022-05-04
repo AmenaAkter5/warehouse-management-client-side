@@ -10,7 +10,7 @@ const Subscribe = () => {
                     <h1>Stay Connected</h1>
                     <p>The gradual accumulation of information get from us.</p>
                 </div>
-                <div className='form-container'>
+                <div className='email-container'>
                     <form>
                         <input className='p-1' type="email" name="" placeholder='Your Email' id="" />
                         <input className='p-1 subscribe-btn' type="submit" value="Subscribe" />

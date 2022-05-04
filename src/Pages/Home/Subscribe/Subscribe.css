@@ -3,7 +3,7 @@
     background-color: #220768;
 }
 
-.form-container {
+.email-container {
     padding: 30px;
 }
 
@@ -31,5 +31,12 @@
 
     .subscribe-content {
         margin-top: 50px;
+    }
+
+    .email-container {
+        width: 100%;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
     }
 }
