@@ -25,7 +25,7 @@ const Inventories = () => {
         const proceed = window.confirm('Are you sure to delete?');
 
         if (proceed) {
-            const url = `http://localhost:5000/fruits/${id}`
+            const url = `https://pure-cliffs-64798.herokuapp.com/fruits/${id}`
             fetch(url, {
                 method: 'DELETE'
             })

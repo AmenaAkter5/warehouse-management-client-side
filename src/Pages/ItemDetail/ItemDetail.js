@@ -14,7 +14,7 @@ const ItemDetail = () => {
 
     // data load
     useEffect(() => {
-        const url = `http://localhost:5000/fruits/${id}`;
+        const url = `https://pure-cliffs-64798.herokuapp.com/fruits/${id}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setItem(data))
@@ -30,7 +30,7 @@ const ItemDetail = () => {
         const updatedItem = { quantity };
 
         // update data to server
-        const url = `http://localhost:5000/fruits/${id}`
+        const url = `https://pure-cliffs-64798.herokuapp.com/fruits/${id}`
         fetch(url, {
             method: 'PUT',
             headers: {
@@ -56,7 +56,7 @@ const ItemDetail = () => {
         const updatedItem = { quantity };
 
         // update data to server
-        const url = `http://localhost:5000/fruits/${id}`
+        const url = `https://pure-cliffs-64798.herokuapp.com/fruits/${id}`
         fetch(url, {
             method: 'PUT',
             headers: {

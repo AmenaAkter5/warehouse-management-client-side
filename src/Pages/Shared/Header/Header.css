@@ -2,8 +2,6 @@
     margin: 0;
 }
 
-/* #150149 */
-
 .navbar a {
     text-decoration: none;
     color: #220768;
@@ -55,12 +53,12 @@
 
 
 
-/* Media Query */
-/* =========== */
+/* ============= Media Query ============ */
+/* ====================================== */
 
 /* Mobile and Tablet Device */
 
-@media screen and (max-width: 768px) {
+@media only screen and (min-width: 480px) and (max-width: 768px) {
 
     .header img {
         margin: 0;

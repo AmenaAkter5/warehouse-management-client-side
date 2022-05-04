@@ -21,7 +21,7 @@ const AddItem = () => {
     const onSubmit = data => {
 
         // save data to fruits collection
-        let url = 'http://localhost:5000/fruits';
+        let url = 'https://pure-cliffs-64798.herokuapp.com/fruits';
         fetch(url, {
             method: 'POST',
             headers: {
@@ -44,7 +44,7 @@ const AddItem = () => {
         }
 
         // save data to my items collection
-        /* url = 'http://localhost:5000/items';
+        /* url = 'https://pure-cliffs-64798.herokuapp.com/items';
         fetch(url, {
             method: 'POST',
             headers: {
@@ -60,7 +60,7 @@ const AddItem = () => {
                 }
             }) */
 
-        axios.post('http://localhost:5000/items', insertedData)
+        axios.post('https://pure-cliffs-64798.herokuapp.com/items', insertedData)
             .then(response => {
                 // console.log(response);
                 const { data } = response;

@@ -14,7 +14,7 @@ const useInventories = () => {
     }, []) */
 
     useEffect(() => {
-        fetch('http://localhost:5000/fruits')
+        fetch('https://pure-cliffs-64798.herokuapp.com/fruits')
             .then(res => res.json())
             .then(data => setItems(data))
     }, [])
