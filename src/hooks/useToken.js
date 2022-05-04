@@ -3,15 +3,18 @@ import axios from "axios";
 
 
 const useToken = user => {
+
+    // token load state
     const [token, setToken] = useState('');
 
+
+    // fetch data
     useEffect(() => {
 
         const getToken = async () => {
             const email = user?.user?.email;
             if (email) {
                 const { data } = await axios.post('https://pure-cliffs-64798.herokuapp.com/login', { email })
-                // console.log(data);
                 setToken(data.accessToken);
                 localStorage.setItem('accessToken', data.accessToken);
             }

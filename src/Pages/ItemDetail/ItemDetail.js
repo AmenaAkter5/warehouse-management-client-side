@@ -12,7 +12,8 @@ const ItemDetail = () => {
     // fruit item data state
     const [item, setItem] = useState({});
 
-    // data load
+    // fetch data
+
     useEffect(() => {
         const url = `https://pure-cliffs-64798.herokuapp.com/fruits/${id}`;
         fetch(url)
@@ -98,7 +99,6 @@ const ItemDetail = () => {
                     <div className='p-1'>
                         <p className="mb-0">Product id: {item._id}</p>
                         <h5>Quantity: <span id="quantity">{item.quantity}</span> {item.name === 'Jackfruit' || item.name === 'Water Mealon' ? 'Pieces' : 'Kg'}</h5>
-                        <h6>Stocked Cart: {item.cart}</h6>
                         <h6>Supplier:  {item.supplier}</h6>
                         <p className='mt-2 items-text'>{item.description}</p>
                         <div className='text-center'>

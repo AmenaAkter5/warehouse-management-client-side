@@ -8,7 +8,7 @@ import Loading from '../../Shared/Loading/Loading';
 
 const Inventory = () => {
 
-    // use inventory items hook
+    // use inventory hook
     const [items] = useInventories();
 
     // use navigate hook

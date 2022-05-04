@@ -9,17 +9,25 @@ import MyItemsDetail from '../MyItemsDetail/MyItemsDetail';
 
 
 const MyItems = () => {
-    const [user] = useAuthState(auth);
 
+    // my items data state
     const [myItems, setMyItems] = useState([]);
 
+    // get user
+    const [user] = useAuthState(auth);
+
+    // use navigate hook
     const navigate = useNavigate();
 
+
+    // fetch data
     useEffect(() => {
 
         const getMyItems = async () => {
+
+            // get email
             const email = user?.email;
-            // console.log(email);
+
             const url = `https://pure-cliffs-64798.herokuapp.com/items?email=${email}`
             try {
                 const { data } = await axiosPrivate.get(url)
@@ -37,19 +45,19 @@ const MyItems = () => {
     }, [user, navigate])
 
 
-    // Delete button handler of manage inventory page
+    // Delete items button handler
     const handleDeleteItems = id => {
 
         const proceed = window.confirm('Are you sure to delete?');
 
         if (proceed) {
             const url = `https://pure-cliffs-64798.herokuapp.com/items/${id}`
+
             fetch(url, {
                 method: 'DELETE'
             })
                 .then(res => res.json())
                 .then(data => {
-                    console.log(data);
                     const remaining = myItems.filter(myItem => myItem._id !== id);
                     setMyItems(remaining);
                 })
@@ -57,20 +65,12 @@ const MyItems = () => {
     };
 
     return (
-        <section className='inventories-section py-5 mb-5'>
+        <section className='inventories-section py-5'>
             <div className='mx-auto my-5 container'>
                 <div className="title-text">
                     <p>Your Items</p>
                     <h1 className='mb-0 pb-0'>All Items Are Added By You</h1>
                 </div>
-                {/* <ul>
-                    {
-                        myItems.map(myItem => <li
-                            key={myItem._id}>
-                            {myItem.email}: {myItem.data.name} <button onClick={() => handleDeleteItems(myItem._id)}>X</button>
-                        </li>)
-                    }
-                </ul> */}
                 <div className='ineventory-container'>
                     {
                         myItems.map(myItem => <MyItemsDetail

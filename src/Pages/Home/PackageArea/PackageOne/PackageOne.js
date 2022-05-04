@@ -1,11 +1,12 @@
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
+import './PackageOne.css';
 
 
 const PackageOne = () => {
     return (
-        <div className="card h-100 px-3 mx-2 border-0 pt-5">
+        <div className="card h-100 px-3 mx-3 border-0 pt-5">
             <h2>300/-</h2>
             <h3>Basic</h3>
             <p>For the basic management of your products.</p>

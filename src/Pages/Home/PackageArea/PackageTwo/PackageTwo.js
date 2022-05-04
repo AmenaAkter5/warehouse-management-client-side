@@ -1,10 +1,12 @@
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
+import './PackageTwo.css';
+
 
 const PackageTwo = () => {
     return (
-        <div className="h-100 p-4 mb-3 me-3 pt-5 border-0 shadow-lg highlighted position-relative">
+        <div className="h-100 p-4 mb-3 mx-3 pt-5 border-0 shadow-lg highlighted position-relative">
             <h2 className="text-white">800/-</h2>
             <h3 className="text-white">Standard</h3>
             <p className="text-white">For arranging and preserve your products as your demand.</p>

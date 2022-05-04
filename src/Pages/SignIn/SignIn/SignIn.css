@@ -122,10 +122,10 @@
 
 
 
-/* Media Query */
-/* =========== */
+/* ============= Media Query ============ */
+/* ====================================== */
 
-/* Mobile Device */
+/* ==== Mobile Device ==== */
 
 @media only screen and (max-width: 480px) {
     .sign-in {
@@ -143,18 +143,3 @@
         margin: 0;
     }
 }
-
-
-
-/* 
-@media only screen and (min-width: 480px) and (max-width: 768px) {
-    .form-container {
-        width: 360px;
-        box-sizing: border-box;
-        border-radius: 8px;
-        display: flex;
-        justify-content: center;
-        background-color: #220768;
-    }
-} 
-*/

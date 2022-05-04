@@ -7,7 +7,7 @@ const Subscribe = () => {
         <section className='subscribe d-flex align-items-center'>
             <div className='container d-sm-block d-lg-flex align-items-center justify-content-between subscribe-content'>
                 <div className='text-white'>
-                    <h1>Get In Touch</h1>
+                    <h1>Stay Connected</h1>
                     <p>The gradual accumulation of information get from us.</p>
                 </div>
                 <div className='form-container'>

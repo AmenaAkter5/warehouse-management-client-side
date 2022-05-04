@@ -8,7 +8,12 @@
 }
 
 
-@media screen and (max-width: 768px) {
+/* ============= Media Query ============ */
+/* ====================================== */
+
+/* ==== Mobile Device ==== */
+
+@media only screen and (max-width: 768px) {
 
     .about {
         width: 98%;

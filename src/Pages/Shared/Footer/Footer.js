@@ -24,7 +24,7 @@ const Footer = () => {
                     <p><FontAwesomeIcon className='fa-solid' icon={faClock}></FontAwesomeIcon>Saturday and Sunday - 8 am to 11 pm</p>
                 </div>
                 <div className="footer-right">
-                    <h1>Location</h1>
+                    <h1>Get In Touch</h1>
                     <p>#30 abc colony, xyz city <FontAwesomeIcon className='fa-solid' icon={faLocationDot}></FontAwesomeIcon></p>
                     <p>example@gmail.com<FontAwesomeIcon className='fa-solid' icon={faPaperPlane}></FontAwesomeIcon></p>
                     <p>+01 12586<FontAwesomeIcon className='fa-solid' icon={faPhone}></FontAwesomeIcon></p>

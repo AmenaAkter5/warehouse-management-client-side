@@ -14,13 +14,13 @@ const PackageArea = () => {
                 <h1>Our Offered Packages</h1>
             </div>
             <div className='package-container my-5'>
-                <div className="shadow">
+                <div className="shadow package">
                     <PackageOne></PackageOne>
                 </div>
                 <div>
                     <PackageTwo></PackageTwo>
                 </div>
-                <div className="shadow">
+                <div className="shadow package">
                     <PackageThree></PackageThree>
                 </div>
             </div>

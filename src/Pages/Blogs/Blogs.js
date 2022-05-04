@@ -6,6 +6,9 @@ const Blogs = () => {
     return (
         <section className='container pb-5'>
             <div className='blogs-container'>
+
+                {/* Difference between Javascript and NodeJS */}
+
                 <article className='article'>
                     <h3 className='blog-title mb-5'>Difference between Javascript and NodeJS</h3>
                     <p className='mb-5'><b>NodeJS</b> is a cross-platform, open-source Javascript runtime environment that enables server-side javascript execution.
@@ -16,6 +19,9 @@ const Blogs = () => {
                         Javascript can be thought of as an upgraded version of the ECMA script.
                         Javascript is a high-level programming language that is built on prototype inheritance and employs the Oops concept. </p>
                 </article>
+
+                {/* Purpose of JWT and How it works */}
+
                 <article className='article'>
                     <h3 className='blog-title mb-4'>Purpose of JWT</h3>
                     <p><b>JWT</b> (JSON Web Token) is an open standard that allows two parties, a client and a server, to share security information.
@@ -32,6 +38,9 @@ const Blogs = () => {
                         The receiving party checks that the header and payload match the signature when the token is utilized.
                     </p>
                 </article>
+
+                {/* Differences between SQL and NoSQL databases */}
+
                 <article className='article'>
                     <h3 className='blog-title mb-4'>Differences between SQL and NoSQL databases</h3>
                     <p className='mb-5'><b>SQL</b> is a RELATIONAL DATABASE MANAGEMENT SYSTEM <b>(RDBMS).</b> These databases have fixed or static or predefined schema. These databases aren't designed to store hierarchical data. These databases are great for storing hierarchical data. Complex queries are best served by these databases. It is Vertically Scalable </p>

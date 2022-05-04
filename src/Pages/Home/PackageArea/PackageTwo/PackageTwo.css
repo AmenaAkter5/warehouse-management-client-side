@@ -1,0 +1,11 @@
+.highlighted {
+    background-color: #220768;
+    border-radius: 26px;
+}
+
+.highlighted-icon-style {
+    size: 20px;
+    color: white;
+    border-radius: 15px;
+    background-color: #695797;
+}

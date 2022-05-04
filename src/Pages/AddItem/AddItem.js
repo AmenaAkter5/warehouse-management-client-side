@@ -14,13 +14,16 @@ const AddItem = () => {
     const { register, handleSubmit, reset } = useForm();
 
 
+    // get user
     const [user] = useAuthState(auth);
 
 
     // handle form submission
+
     const onSubmit = data => {
 
         // save data to fruits collection
+
         let url = 'https://pure-cliffs-64798.herokuapp.com/fruits';
         fetch(url, {
             method: 'POST',
@@ -38,31 +41,17 @@ const AddItem = () => {
             })
 
 
+
+
+        // save data to my items collection
+
         const insertedData = {
             email: user.email,
             data
         }
 
-        // save data to my items collection
-        /* url = 'https://pure-cliffs-64798.herokuapp.com/items';
-        fetch(url, {
-            method: 'POST',
-            headers: {
-                'content-type': 'application/json'
-            },
-            body: JSON.stringify(data)
-        })
-            .then(res => res.json())
-            .then(result => {
-                // toast
-                if (result.insertedId) {
-                    toast('Your Item is added successfully!!');
-                }
-            }) */
-
         axios.post('https://pure-cliffs-64798.herokuapp.com/items', insertedData)
             .then(response => {
-                // console.log(response);
                 const { data } = response;
                 if (data.insertedId) {
                     // toast('Your Item is added successfully!!');
@@ -76,7 +65,6 @@ const AddItem = () => {
         <div className='my-4 pt-2 mx-auto add-container'>
             <h1 className='add-text mb-3'>Add a new fruit item in warehouse</h1>
             <form className='d-flex flex-column' onSubmit={handleSubmit(onSubmit)}>
-                {/* <input className='mb-3 p-1' placeholder='Email' {...register("email", { required: true, maxLength: 20 })} /> */}
                 <input className='mb-3 p-1' placeholder='Name' {...register("name", { required: true, maxLength: 20 })} />
                 <textarea className='mb-3 p-1' placeholder='Description' {...register("description")} />
                 <input className='mb-3 p-1' placeholder='Price' type="number" {...register("price")} />

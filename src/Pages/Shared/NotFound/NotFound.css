@@ -9,9 +9,10 @@
 }
 
 
-/* Media Query */
+/* ============= Media Query ============ */
+/* ====================================== */
 
-/* Mobile Device */
+/* ==== Mobile Device ==== */
 
 @media screen and (max-width: 768px) {
     .notfound {
