@@ -11,6 +11,8 @@ const ItemDetail = () => {
 
     // fruit item data state
     const [item, setItem] = useState({});
+    // console.log(item);
+
 
     // fetch data
 
@@ -26,12 +28,21 @@ const ItemDetail = () => {
     // delivered button handle
     const deliverdButtonHandle = () => {
 
+        // updatedOther
+        const name = item.name;
+        const img = item.img;
+        const price = item.price;
+        const supplier = item.supplier;
+        const description = item.description;
+
         // update quantity
-        const quantity = item.quantity - 1;
-        const updatedItem = { quantity };
+        const quantity = parseInt(item.quantity) - 1;
+        const updatedItem = { quantity, name };
+
 
         // update data to server
-        const url = `https://pure-cliffs-64798.herokuapp.com/fruits/${id}`
+        // const url = `https://pure-cliffs-64798.herokuapp.com/fruits/${id}`
+        const url = `http://localhost:5000/fruits/${id}`
         fetch(url, {
             method: 'PUT',
             headers: {
