@@ -24,37 +24,16 @@ const AddItem = () => {
 
         // save data to fruits collection
 
-        let url = 'https://pure-cliffs-64798.herokuapp.com/fruits';
-        fetch(url, {
-            method: 'POST',
-            headers: {
-                'content-type': 'application/json'
-            },
-            body: JSON.stringify(data)
-        })
-            .then(res => res.json())
-            .then(result => {
-                // toast
-                if (result.insertedId) {
-                    toast('Your Item is added successfully!!');
-                }
-            })
-
-
-
-
-        // save data to my items collection
-
         const insertedData = {
             email: user.email,
             data
         }
 
-        axios.post('https://pure-cliffs-64798.herokuapp.com/items', insertedData)
+        axios.post('https://pure-cliffs-64798.herokuapp.com/fruits', insertedData)
             .then(response => {
                 const { data } = response;
                 if (data.insertedId) {
-                    // toast('Your Item is added successfully!!');
+                    toast('Your Item is added successfully!!');
                 }
                 reset();
             })

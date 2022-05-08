@@ -13,7 +13,7 @@ const PackageDetail = (props) => {
             <h3>{name}</h3>
             <p>{statement}</p>
             {
-                features.map(feature => <p><FontAwesomeIcon className='me-2 p-1 icon-style' icon={faCheck}></FontAwesomeIcon>{feature}</p>)
+                features.map((feature) => <p><FontAwesomeIcon className='me-2 p-1 icon-style' icon={faCheck}></FontAwesomeIcon>{feature}</p>)
             }
             <div className="text-center mt-4">
                 <button className="update-btn mb-2">

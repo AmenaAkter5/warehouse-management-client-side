@@ -6,7 +6,7 @@ const useInventories = () => {
     // inventory items data load state
     const [items, setItems] = useState([]);
 
-    // data load state
+    // data loaded state
     const [dataLoaded, setDataLoaded] = useState(false);
 
 
@@ -18,7 +18,7 @@ const useInventories = () => {
                 setItems(data)
                 setDataLoaded(true)
             })
-    }, [])
+    }, [items])
 
     return { items, dataLoaded, setItems };
 };

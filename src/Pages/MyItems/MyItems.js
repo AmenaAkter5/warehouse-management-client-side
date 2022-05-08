@@ -26,9 +26,10 @@ const MyItems = () => {
         const getMyItems = async () => {
 
             // get email
-            const email = user?.email;
+            const mail = user?.email;
 
-            const url = `https://pure-cliffs-64798.herokuapp.com/items?email=${email}`
+            const url = `https://pure-cliffs-64798.herokuapp.com/items?email=${mail}`
+
             try {
                 const { data } = await axiosPrivate.get(url)
                 setMyItems(data);
@@ -51,7 +52,8 @@ const MyItems = () => {
         const proceed = window.confirm('Are you sure to delete?');
 
         if (proceed) {
-            const url = `https://pure-cliffs-64798.herokuapp.com/items/${id}`
+
+            const url = `https://pure-cliffs-64798.herokuapp.com/fruits/${id}`
 
             fetch(url, {
                 method: 'DELETE'

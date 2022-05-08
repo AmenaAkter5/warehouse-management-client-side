@@ -18,7 +18,7 @@ const ItemDetail = () => {
         const url = `https://pure-cliffs-64798.herokuapp.com/fruits/${id}`;
         fetch(url)
             .then(res => res.json())
-            .then(data => setItem(data))
+            .then(data => setItem(data.data))
     }, [id, item]);
 
 
@@ -44,6 +44,7 @@ const ItemDetail = () => {
                 // console.log('Success:', data);
             })
     };
+
 
 
     // form submission handle
@@ -97,8 +98,7 @@ const ItemDetail = () => {
                     <h4 className="text-center fw-bold">{item.name}</h4>
                     <h4 className="text-center mb-2 price">{item.price}/-</h4>
                     <div className='p-1'>
-                        <p className="mb-0">Product id: {item._id}</p>
-                        {/* <h5>Quantity: <span id="quantity">{item.quantity}</span> {item.name === 'Jackfruit' || item.name === 'Water Mealon' ? 'Pieces' : 'Kg'}</h5> */}
+                        <p className="mb-0">Product id: {id}</p>
                         {
                             item.quantity === 0
                                 ?

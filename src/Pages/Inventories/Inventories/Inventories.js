@@ -19,6 +19,8 @@ const Inventories = () => {
         navigate('/add');
     }
 
+
+
     // Delete button handler of manage inventory page
 
     const handleDelete = id => {
@@ -33,7 +35,7 @@ const Inventories = () => {
                 .then(res => res.json())
                 .then(data => {
                     console.log(data);
-                    const remaining = items.filter(service => service._id !== id);
+                    const remaining = items.filter(item => item._id !== id);
                     setItems(remaining);
                 })
         }
@@ -50,7 +52,8 @@ const Inventories = () => {
                     {
                         items.map(item => <InventoryItems
                             key={item._id}
-                            item={item}
+                            id={item._id}
+                            item={item.data}
                             handleDelete={handleDelete}
                         ></InventoryItems>)
                     }

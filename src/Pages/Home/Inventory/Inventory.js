@@ -29,7 +29,8 @@ const Inventory = () => {
                     {
                         items.slice(0, 6).map(item => <FruitItems
                             key={item._id}
-                            item={item}
+                            id={item._id}
+                            item={item.data}
                         ></FruitItems>)
                     }
                 </div>
