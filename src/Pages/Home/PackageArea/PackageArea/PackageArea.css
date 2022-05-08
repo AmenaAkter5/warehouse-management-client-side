@@ -4,9 +4,16 @@
     grid-column-gap: 40px;
 }
 
-.package {
+.package-container .package {
     border-radius: 26px;
 }
+
+.highlighted {
+    background-color: #220768;
+    border-radius: 26px;
+}
+
+
 
 
 /* ============= Media Query ============ */

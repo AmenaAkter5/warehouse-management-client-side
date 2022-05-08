@@ -35,7 +35,7 @@
 
     .email-container {
         width: 100%;
-        padding: 0;
+        padding: 0 28px;
         display: flex;
         flex-wrap: wrap;
     }
