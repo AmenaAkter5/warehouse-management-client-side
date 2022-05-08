@@ -28,7 +28,13 @@ const InventoryItems = ({ item, handleDelete }) => {
                 <div className="inventory-items-details">
                     <h5 className='mb-1'>{name}</h5>
                     <h6 className='mb-1'>Price: <span style={{ color: '#220768' }}>{price}/-</span></h6>
-                    <p>Quantity: {quantity} {name === 'Jackfruit' || name === 'Water Mealon' ? 'Pieces' : 'Kg'}</p>
+                    {
+                        quantity === 0
+                            ?
+                            <p className='text-danger fw-bold'>Sold Out</p>
+                            :
+                            <p>Quantity: {quantity} {name === 'Jackfruit' || name === 'Water Mealon' ? 'Pieces' : 'Kg'}</p>
+                    }
                     <p>Supplier: {supplier}</p>
                 </div>
                 <div className="add-delete-container">

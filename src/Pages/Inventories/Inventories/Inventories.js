@@ -9,7 +9,7 @@ import { useNavigate } from 'react-router-dom';
 const Inventories = () => {
 
     // use inventory items hook
-    const [items, setItems] = useInventories();
+    const { items, setItems } = useInventories();
 
     // use navigate hook
     const navigate = useNavigate();

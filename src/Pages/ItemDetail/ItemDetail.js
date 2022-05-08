@@ -98,7 +98,14 @@ const ItemDetail = () => {
                     <h4 className="text-center mb-2 price">{item.price}/-</h4>
                     <div className='p-1'>
                         <p className="mb-0">Product id: {item._id}</p>
-                        <h5>Quantity: <span id="quantity">{item.quantity}</span> {item.name === 'Jackfruit' || item.name === 'Water Mealon' ? 'Pieces' : 'Kg'}</h5>
+                        {/* <h5>Quantity: <span id="quantity">{item.quantity}</span> {item.name === 'Jackfruit' || item.name === 'Water Mealon' ? 'Pieces' : 'Kg'}</h5> */}
+                        {
+                            item.quantity === 0
+                                ?
+                                <h5 className='text-danger fw-bold'>Sold Out</h5>
+                                :
+                                <h5>Quantity: <span id="quantity">{item.quantity}</span> {item.name === 'Jackfruit' || item.name === 'Water Mealon' ? 'Pieces' : 'Kg'}</h5>
+                        }
                         <h6>Supplier:  {item.supplier}</h6>
                         <p className='mt-2 items-text'>{item.description}</p>
                         <div className='text-center'>
