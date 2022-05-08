@@ -3,13 +3,12 @@ import './Inventory.css';
 import FruitItems from '../FruitItems/FruitItems';
 import useInventories from '../../../hooks/useInventories';
 import { useNavigate } from 'react-router-dom';
-import Loading from '../../Shared/Loading/Loading';
 
 
 const Inventory = () => {
 
     // use inventory hook
-    const [items] = useInventories();
+    const { items } = useInventories();
 
     // use navigate hook
     const navigate = useNavigate();
@@ -17,11 +16,6 @@ const Inventory = () => {
     // manage inventory button handler
     const manageInventoryHandle = () => {
         navigate('/inventory');
-    }
-
-    // loading page
-    if (!items) {
-        return <Loading></Loading>
     }
 
     return (
