@@ -11,8 +11,10 @@ const Inventories = () => {
     // use inventory items hook
     const { items, setItems } = useInventories();
 
+
     // use navigate hook
     const navigate = useNavigate();
+
 
     // add items button handler
     const AddItemsButtonHandle = () => {
@@ -41,6 +43,7 @@ const Inventories = () => {
         }
     };
 
+
     return (
         <section className='inventories-section'>
             <div className="container mx-auto my-5">
@@ -52,8 +55,7 @@ const Inventories = () => {
                     {
                         items.map(item => <InventoryItems
                             key={item._id}
-                            id={item._id}
-                            item={item.data}
+                            item={item}
                             handleDelete={handleDelete}
                         ></InventoryItems>)
                     }

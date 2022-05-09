@@ -10,23 +10,28 @@ import axios from 'axios';
 
 const AddItem = () => {
 
-    // use react hook form
-    const { register, handleSubmit, reset } = useForm();
-
 
     // get user
     const [user] = useAuthState(auth);
+
+
+    // use react hook form
+    const { register, handleSubmit, reset } = useForm();
+
 
 
     // handle form submission
 
     const onSubmit = data => {
 
-        // save data to fruits collection
-
         const insertedData = {
-            email: user.email,
-            data
+            email: user?.email,
+            name: data.name,
+            description: data.description,
+            price: data.price,
+            quantity: data.quantity,
+            supplier: data.supplier,
+            img: data.img
         }
 
         axios.post('https://pure-cliffs-64798.herokuapp.com/fruits', insertedData)
@@ -45,11 +50,11 @@ const AddItem = () => {
             <h1 className='add-text mb-3'>Add a new fruit item in warehouse</h1>
             <form className='d-flex flex-column' onSubmit={handleSubmit(onSubmit)}>
                 <input className='mb-3 p-1' placeholder='Name' {...register("name", { required: true, maxLength: 20 })} />
-                <textarea className='mb-3 p-1' placeholder='Description' {...register("description")} />
-                <input className='mb-3 p-1' placeholder='Price' type="number" {...register("price")} />
-                <input className='mb-3 p-1' placeholder='Quantity' type="number" {...register("quantity")} />
-                <input className='mb-3 p-1' placeholder='Supplier Name' type="text" {...register("supplier")} />
-                <input className='mb-3 p-1' placeholder='Photo URL' type="text" {...register("img")} />
+                <textarea className='mb-3 p-1' placeholder='Description' {...register("description", { required: true })} />
+                <input className='mb-3 p-1' placeholder='Price' type="number" {...register("price", { required: true })} />
+                <input className='mb-3 p-1' placeholder='Quantity' type="number" {...register("quantity", { required: true })} />
+                <input className='mb-3 p-1' placeholder='Supplier Name' type="text" {...register("supplier", { required: true })} />
+                <input className='mb-3 p-1' placeholder='Photo URL' type="text" {...register("img", { required: true })} />
                 <input className='add-btn py-1 px-3' type="submit" value="Add Item" />
             </form>
         </div>

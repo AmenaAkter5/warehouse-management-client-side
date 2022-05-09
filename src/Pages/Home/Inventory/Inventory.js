@@ -10,8 +10,10 @@ const Inventory = () => {
     // use inventory hook
     const { items } = useInventories();
 
+
     // use navigate hook
     const navigate = useNavigate();
+
 
     // manage inventory button handler
     const manageInventoryHandle = () => {
@@ -29,8 +31,7 @@ const Inventory = () => {
                     {
                         items.slice(0, 6).map(item => <FruitItems
                             key={item._id}
-                            id={item._id}
-                            item={item.data}
+                            item={item}
                         ></FruitItems>)
                     }
                 </div>

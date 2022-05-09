@@ -9,9 +9,9 @@ const ItemDetail = () => {
     // get dynamic parameter of route
     const { id } = useParams();
 
+
     // fruit item data state
     const [item, setItem] = useState({});
-    // console.log(item);
 
 
     // fetch data
@@ -20,7 +20,7 @@ const ItemDetail = () => {
         const url = `https://pure-cliffs-64798.herokuapp.com/fruits/${id}`;
         fetch(url)
             .then(res => res.json())
-            .then(data => setItem(data.data))
+            .then(data => setItem(data))
     }, [id, item]);
 
 
@@ -28,21 +28,14 @@ const ItemDetail = () => {
     // delivered button handle
     const deliverdButtonHandle = () => {
 
-        // updatedOther
-        const name = item.name;
-        const img = item.img;
-        const price = item.price;
-        const supplier = item.supplier;
-        const description = item.description;
-
         // update quantity
         const quantity = parseInt(item.quantity) - 1;
-        const updatedItem = { quantity, name };
+        const updatedItem = { quantity };
 
 
         // update data to server
-        // const url = `https://pure-cliffs-64798.herokuapp.com/fruits/${id}`
-        const url = `http://localhost:5000/fruits/${id}`
+        const url = `https://pure-cliffs-64798.herokuapp.com/fruits/${id}`
+
         fetch(url, {
             method: 'PUT',
             headers: {
@@ -58,7 +51,7 @@ const ItemDetail = () => {
 
 
 
-    // form submission handle
+    // restock form submission handle
     const handleUpdateQuantity = event => {
         event.preventDefault();
 

@@ -3,10 +3,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 
 
-const MyItemsDetail = ({ items, handleDeleteItems, id }) => {
+const MyItemsDetail = ({ items, handleDeleteItems }) => {
 
     // destructuring item
-    const { name, price, img, quantity, supplier } = items;
+    const { _id, name, price, img, quantity, supplier } = items;
 
 
     return (
@@ -28,7 +28,7 @@ const MyItemsDetail = ({ items, handleDeleteItems, id }) => {
                     <p>Supplier: {supplier}</p>
                 </div>
                 <div className="add-delete-container">
-                    <button onClick={() => handleDeleteItems(id)} className='delete-button' >
+                    <button onClick={() => handleDeleteItems(_id)} className='delete-button' >
                         <FontAwesomeIcon className='delete-icon' icon={faTrashAlt}></FontAwesomeIcon>
                     </button>
                 </div>

@@ -3,13 +3,15 @@ import { useNavigate } from 'react-router-dom';
 import './FruitItems.css';
 
 
-const FruitItems = ({ item, id }) => {
+const FruitItems = ({ item }) => {
 
     // destructuring item information
-    const { name, price, description, img, quantity, supplier } = item
+    const { _id, name, price, description, img, quantity, supplier } = item
+
 
     // use navigate hook
     const navigate = useNavigate();
+
 
     // update stock button handler
     const updateStockHandler = id => {
@@ -35,7 +37,7 @@ const FruitItems = ({ item, id }) => {
                 <p className='mt-2 items-text'>{description}</p>
             </div>
             <div className='text-center'>
-                <button onClick={() => updateStockHandler(id)} className='update-btn'>Update Stock</button>
+                <button onClick={() => updateStockHandler(_id)} className='update-btn'>Update Stock</button>
             </div>
         </div>
     );

@@ -5,14 +5,15 @@ import { useNavigate } from 'react-router-dom';
 import './InventoryItems.css';
 
 
-const InventoryItems = ({ item, id, handleDelete }) => {
+const InventoryItems = ({ item, handleDelete }) => {
 
     // destructuring item
-    const { name, price, img, quantity, supplier } = item;
+    const { _id, name, price, img, quantity, supplier } = item;
 
 
     // use navigate hook
     const navigate = useNavigate();
+
 
     // update stock button handler
     const updateStockHandler = id => {
@@ -38,10 +39,10 @@ const InventoryItems = ({ item, id, handleDelete }) => {
                     <p>Supplier: {supplier}</p>
                 </div>
                 <div className="add-delete-container">
-                    <button onClick={() => updateStockHandler(id)} className='add-button'>
+                    <button onClick={() => updateStockHandler(_id)} className='add-button'>
                         <FontAwesomeIcon className='add-icon' icon={faCirclePlus}></FontAwesomeIcon>
                     </button>
-                    <button onClick={() => handleDelete(id)} className='delete-button' >
+                    <button onClick={() => handleDelete(_id)} className='delete-button' >
                         <FontAwesomeIcon className='delete-icon' icon={faTrashAlt}></FontAwesomeIcon>
                     </button>
                 </div>

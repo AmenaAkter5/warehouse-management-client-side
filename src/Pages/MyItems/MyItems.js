@@ -13,8 +13,10 @@ const MyItems = () => {
     // my items data state
     const [myItems, setMyItems] = useState([]);
 
+
     // get user
     const [user] = useAuthState(auth);
+
 
     // use navigate hook
     const navigate = useNavigate();
@@ -77,8 +79,7 @@ const MyItems = () => {
                     {
                         myItems.map(myItem => <MyItemsDetail
                             key={myItem._id}
-                            id={myItem._id}
-                            items={myItem.data}
+                            items={myItem}
                             handleDeleteItems={handleDeleteItems}
                         ></MyItemsDetail>)
                     }
