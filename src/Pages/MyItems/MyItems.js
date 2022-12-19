@@ -30,7 +30,7 @@ const MyItems = () => {
             // get email
             const mail = user?.email;
 
-            const url = `https://pure-cliffs-64798.herokuapp.com/items?email=${mail}`
+            const url = `https://warehouse-management-server-side-production-6978.up.railway.app/items?email=${mail}`
 
             try {
                 const { data } = await axiosPrivate.get(url)
@@ -55,7 +55,7 @@ const MyItems = () => {
 
         if (proceed) {
 
-            const url = `https://pure-cliffs-64798.herokuapp.com/fruits/${id}`
+            const url = `https://warehouse-management-server-side-production-6978.up.railway.app/fruits/${id}`
 
             fetch(url, {
                 method: 'DELETE'

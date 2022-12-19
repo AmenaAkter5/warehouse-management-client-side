@@ -34,7 +34,7 @@ const AddItem = () => {
             img: data.img
         }
 
-        axios.post('https://pure-cliffs-64798.herokuapp.com/fruits', insertedData)
+        axios.post('https://warehouse-management-server-side-production-6978.up.railway.app/fruits', insertedData)
             .then(response => {
                 const { data } = response;
                 if (data.insertedId) {

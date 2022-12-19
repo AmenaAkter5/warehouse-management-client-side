@@ -17,7 +17,7 @@ const ItemDetail = () => {
     // fetch data
 
     useEffect(() => {
-        const url = `https://pure-cliffs-64798.herokuapp.com/fruits/${id}`;
+        const url = `https://warehouse-management-server-side-production-6978.up.railway.app/fruits/${id}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setItem(data))
@@ -34,7 +34,7 @@ const ItemDetail = () => {
 
 
         // update data to server
-        const url = `https://pure-cliffs-64798.herokuapp.com/fruits/${id}`
+        const url = `https://warehouse-management-server-side-production-6978.up.railway.app/fruits/${id}`
 
         fetch(url, {
             method: 'PUT',
@@ -62,7 +62,7 @@ const ItemDetail = () => {
         const updatedItem = { quantity };
 
         // update data to server
-        const url = `https://pure-cliffs-64798.herokuapp.com/fruits/${id}`
+        const url = `https://warehouse-management-server-side-production-6978.up.railway.app/fruits/${id}`
         fetch(url, {
             method: 'PUT',
             headers: {

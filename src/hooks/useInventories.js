@@ -15,7 +15,7 @@ const useInventories = () => {
     // fetch data
     useEffect(() => {
 
-        fetch('https://pure-cliffs-64798.herokuapp.com/fruits')
+        fetch('https://warehouse-management-server-side-production-6978.up.railway.app/fruits')
             .then(res => res.json())
             .then(data => {
                 setItems(data)

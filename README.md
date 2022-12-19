@@ -1,6 +1,6 @@
 # Fresh Fruit
 
-This project is linked with [Firebase](https://warehouse-management-e55db.web.app/) and [Mongodb](https://pure-cliffs-64798.herokuapp.com/).
+This project is linked with [Firebase](https://warehouse-management-e55db.web.app/) and [Mongodb](https://warehouse-management-server-side-production-6978.up.railway.app/).
 
 
 Because, Firebase is using for authentication and hosting this site.
@@ -46,7 +46,7 @@ mobile.
 
 
 
-## [Server Side link](https://pure-cliffs-64798.herokuapp.com/)
+## [Server Side link](https://warehouse-management-server-side-production-6978.up.railway.app/)
 
-Click here for see the link: https://pure-cliffs-64798.herokuapp.com/
+Click here for see the link: https://warehouse-management-server-side-production-6978.up.railway.app/
 
